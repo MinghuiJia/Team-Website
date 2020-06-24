@@ -43,10 +43,22 @@ export default defineConfig({
               component: './Welcome',
             },
             {
-              name: 'list.table-list',
+              path: '/research',
+              name: 'research',
+              icon: 'smile',
+              component: './Research',
+            },
+            {
+              name: 'cooperation',
               icon: 'table',
-              path: '/list',
-              component: './ListTableList',
+              path: '/cooperation',
+              component: './Cooperation',
+            },
+            {
+              name: 'team',
+              icon: 'team',
+              path: '/team',
+              component: './Team',
             },
             {
               component: './404',
@@ -73,5 +85,6 @@ export default defineConfig({
   proxy: proxy[REACT_APP_ENV || 'dev'],
   manifest: {
     basePath: '/',
+    publicPath: '/public/'
   },
 });
