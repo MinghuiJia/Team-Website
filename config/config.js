@@ -34,13 +34,13 @@ export default defineConfig({
           routes: [
             {
               path: '/',
-              redirect: '/welcome',
+              redirect: '/profile',
             },
             {
-              path: '/welcome',
-              name: 'welcome',
-              icon: 'smile',
-              component: './Welcome',
+              path: '/profile',
+              name: 'profile',
+              icon: 'user',
+              component: './Profile',
             },
             {
               path: '/research',
