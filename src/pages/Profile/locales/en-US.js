@@ -1,5 +1,6 @@
 export default {
   'home.title': 'Dr. Xi Li Personal Profile',
+  'home.subtitle': '',
   'home.teacher.name': 'Dr. Xi Li',
   'home.teacher.address': '129 Luoyu Road, State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing (LIESMARS), Wuhan University, Wuhan 430079, China',
   'home.teacher.description': 'Associate Professor, supervisor of master\'s students, Luojia Young Scholar, international consultant of Asian Development Bank, "excellent young science and technology worker" of Wuhan. He is a member of the editorial board of the International Journal of Remote Sensing, and has published more than 30 academic papers, including more than 10 SCI papers as first/corresponding author. He has published more than 30 academic papers, including more than 10 SCI papers by first/corresponding authors, and is a reviewer for more than 10 international journals. . The main research interests are remote sensing applications, remote sensing image processing and spatial data mining, especially in the methods and applications of luminous remote sensing. In-depth research, the results of which have been published by CNN, BBC, CCTV, The New York Times, Associated Press, Reuters, and more than 600 other outlets. Quoted in international media and by the United Nations Security Council.',

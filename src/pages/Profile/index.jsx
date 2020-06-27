@@ -10,7 +10,9 @@ const { Meta } = Card;
 
 export default () => (
   <PageHeaderWrapper style={{ backgroundColor: "#fff" }}
-                     title={<FormattedMessage id="home.title" />}>
+                     title={<FormattedMessage id="home.title" />}
+                     subTitle={<FormattedMessage id="home.subtitle" />}
+  >
     <div>
       <Row>
         <Title level={4}><FormattedMessage id="home.teacher.name"/></Title>
