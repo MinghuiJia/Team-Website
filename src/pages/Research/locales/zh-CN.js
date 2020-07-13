@@ -1,3 +1,4 @@
 export default {
-  'research.title': '近年来的代表性论文'
+  'research.project.title': '近年来主要承担项目',
+  'research.paper.title': '近年来的代表性论文'
 };

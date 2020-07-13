@@ -5,171 +5,15 @@
  */
 
 import { PageHeaderWrapper } from '@ant-design/pro-layout';
-import { Card, Typography, Row, Col, Avatar, List, } from 'antd';
+import { Card, Typography, Row, Col, Avatar, List, Tag, } from 'antd';
 import { connect } from 'dva';
 import {FormattedMessage} from "umi";
 import React from "react";
 
-const { Title, Text } = Typography;
+const { Title, Paragraph } = Typography;
 const { Meta } = Card;
 
 const paper = [
-  {
-    href: 'https://ant.design',
-    title: `ant design part`,
-    avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
-    description:
-      'Ant Design, a design language for background applications, is refined by Ant UED Team.',
-    content:
-      'We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.',
-  },
-  {
-    href: 'https://ant.design',
-    title: `ant design part`,
-    avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
-    description:
-      'Ant Design, a design language for background applications, is refined by Ant UED Team.',
-    content:
-      'We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.',
-  },
-  {
-    href: 'https://ant.design',
-    title: `ant design part`,
-    avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
-    description:
-      'Ant Design, a design language for background applications, is refined by Ant UED Team.',
-    content:
-      'We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.',
-  },
-  {
-    href: 'https://ant.design',
-    title: `ant design part`,
-    avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
-    description:
-      'Ant Design, a design language for background applications, is refined by Ant UED Team.',
-    content:
-      'We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.',
-  },
-  {
-    href: 'https://ant.design',
-    title: `ant design part`,
-    avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
-    description:
-      'Ant Design, a design language for background applications, is refined by Ant UED Team.',
-    content:
-      'We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.',
-  },
-  {
-    href: 'https://ant.design',
-    title: `ant design part`,
-    avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
-    description:
-      'Ant Design, a design language for background applications, is refined by Ant UED Team.',
-    content:
-      'We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.',
-  },
-  {
-    href: 'https://ant.design',
-    title: `ant design part`,
-    avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
-    description:
-      'Ant Design, a design language for background applications, is refined by Ant UED Team.',
-    content:
-      'We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.',
-  },
-  {
-    href: 'https://ant.design',
-    title: `ant design part`,
-    avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
-    description:
-      'Ant Design, a design language for background applications, is refined by Ant UED Team.',
-    content:
-      'We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.',
-  },
-  {
-    href: 'https://ant.design',
-    title: `ant design part`,
-    avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
-    description:
-      'Ant Design, a design language for background applications, is refined by Ant UED Team.',
-    content:
-      'We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.',
-  },
-  {
-    href: 'https://ant.design',
-    title: `ant design part`,
-    avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
-    description:
-      'Ant Design, a design language for background applications, is refined by Ant UED Team.',
-    content:
-      'We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.',
-  },
-  {
-    href: 'https://ant.design',
-    title: `ant design part`,
-    avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
-    description:
-      'Ant Design, a design language for background applications, is refined by Ant UED Team.',
-    content:
-      'We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.',
-  },
-  {
-    href: 'https://ant.design',
-    title: `ant design part`,
-    avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
-    description:
-      'Ant Design, a design language for background applications, is refined by Ant UED Team.',
-    content:
-      'We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.',
-  },
-  {
-    href: 'https://ant.design',
-    title: `ant design part`,
-    avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
-    description:
-      'Ant Design, a design language for background applications, is refined by Ant UED Team.',
-    content:
-      'We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.',
-  },
-  {
-    href: 'https://ant.design',
-    title: `ant design part`,
-    avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
-    description:
-      'Ant Design, a design language for background applications, is refined by Ant UED Team.',
-    content:
-      'We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.',
-  },
-  {
-    href: 'https://ant.design',
-    title: `ant design part`,
-    avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
-    description:
-      'Ant Design, a design language for background applications, is refined by Ant UED Team.',
-    content:
-      'We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.',
-  },
-  {
-    href: 'https://ant.design',
-    title: `ant design part`,
-    avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
-    description:
-      'Ant Design, a design language for background applications, is refined by Ant UED Team.',
-    content:
-      'We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.',
-  },
-  {
-    href: 'https://ant.design',
-    title: `ant design part`,
-    avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
-    description:
-      'Ant Design, a design language for background applications, is refined by Ant UED Team.',
-    content:
-      'We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.',
-  }
-];
-
-const data = [
   {
     'author': [ 'Xi Li', 'Xiya Li', 'Deren Li', 'Xiaojun He', 'Michael Jendryke' ],
     'title': 'A preliminary investigation of Luojia-1 night-time light imagery',
@@ -180,7 +24,8 @@ const data = [
     'year': '2019',
     'publisher': 'Taylor & Francis',
     'doi': '10.1080/2150704X.2019.1577573',
-    'url': 'https://doi.org/10.1080/2150704X.2019.1577573'
+    'url': 'https://doi.org/10.1080/2150704X.2019.1577573',
+    'abstract': 'Launched on 2 June 2018, Luojia-1 satellite records night-time light imagery at 130 m resolution, which is higher than most of the existing night-time light images to date. This study evaluated radiometric and spatial properties of the Luojia-1 satellite imagery for cities of Los Angeles, Wuhan and Rome as well as the change detection capability for Zunyi city. For the radiometric property, the analysis shows that the Luojia-1 images correlate well with the radiance of the Visible Infrared Imaging Radiometer Suite (VIIRS)’s Day and Night Band (DNB), and that the Luojia-1 images have a wider range of radiance values, as well as higher radiance values (e.g., 40%–90% higher) than the VIIRS DNB images. Using wavelet decomposition and change detection analysis to evaluate spatial property and change detection capability, it was found that the Luojia-1 images provide abundant spatial detail information, with about 20%–54% energy of wavelet component of the images stored in 100–400 m resolutions, and they can help to track the electrification of new roads and buildings at a fine resolution. This study shows that the Luojia-1 images are an effective data source for analysing spatiotemporal distribution of night-time light and its associated socioeconomic attributes.'
   },
   {
     'author': [ 'Xi Li', 'Lixian Zhao', 'Wenjun Han',
@@ -194,7 +39,8 @@ const data = [
     'year': '2018',
     'publisher': 'Taylor & Francis',
     'doi': '10.1080/01431161.2018.1510560',
-    'url': 'https://doi.org/10.1080/01431161.2018.1510560'
+    'url': 'https://doi.org/10.1080/01431161.2018.1510560',
+    'abstract': 'After social and economic problems, Algeria regained its night-time light (NL) brightness as this analysis of space-borne images shows. We evaluate the advancement of artificial light sources and the socioeconomic development between 1992 to 2012 for all 48 provinces. Image calibration improved the consistency and comparability of the DMSP-OLS data. Light detected from gas flaring has been separated to focus on light from human settlements. We then estimated the relationship between night-time light and selected socioeconomic parameters (SEP). Night-time light growth (NLG) and night-time light annual growth (NLAG) indices are calculated at the national, regional and provincial level. Considering the Oil price crash and the Algerian Civil Concord, we take a detailed look at these historic events in Algeria. Our main findings are: (A) The total night-time light (TNL) for human settlements grew nationwide by 128%, (B) night-time light data correlates with socioeconomic parameters such as population, and electric power consumption, (C) the oil price crash resulted in slower night-time light growth, while the Algerian Civil Concord and the end of the crises led to increased TNL, (D) because of government investment, the High Plateaus are the fastest growing region since the end of the crises, (E) space-borne night-time light data can consistently fill the information gap when data from official sources are not available. Government and policy-making bodies may benefit from the presented findings allowing them to oversee and address provincial inequalities and economic development.'
   },
   {
     'author': [ 'Xia Zhao','Deren Li','Xi Li','Lixian Zhao','Chuanqing Wu' ],
@@ -206,7 +52,8 @@ const data = [
     'year': '2018',
     'publisher': 'Taylor & Francis',
     'doi': '10.1080/01431161.2018.1482022',
-    'url': 'https://doi.org/10.1080/01431161.2018.1482022'
+    'url': 'https://doi.org/10.1080/01431161.2018.1482022',
+    'abstract': 'The majority of the research using night-time data has focused on the terrestrial environment, while the light flooding our oceans is less studied. Meanwhile, given the rapid development of imaging technology at night, remotely sensed night-time light data can now provide a great opportunity to improve understanding of the spatiotemporal distribution of light over large areas. In this article, we used monthly cloud-free night-time imagery from the Suomi National Polar-Orbiting Partnership (Suomi NPP) Visible Infrared Imaging Radiometer Suite Day/Night Band, collected from 2014 to 2016, to explore the spatial distribution of night-time light in marine ecosystems. Morphological methods were used to extract light agglomeration areas. Using the Empirical Mode Decomposition method, we detected seasonal change patterns. Our results show that the distribution of light at night is clustered, and mainly concentrated in coastal and offshore waters, with about 70% of the total light found in 0.3% of the global marine waters. Flares from oil and gas well may not create a distinctive seasonal pattern, although fishing lights may show a seasonal pattern. The five largest agglomeration areas of light are centred in the eastern and southeast waters of Asia with little seasonal fluctuation. The cyclical light pattern of the entire marine system had a period of about 0.94 years, while varied from 0.5 to 1.1 years in the agglomeration areas. The proportions of seasonal energy for 49% of the top 100 agglomeration areas were below 10%, while the areas located in the waters near northern Japan, North Korea, eastern Indonesia, and eastern Argentina experienced large seasonal changes.'
   },
   {
     'author': [ 'Xi Li', 'Christopher Elvidge',
@@ -219,7 +66,8 @@ const data = [
     'year': '2017',
     'publisher': 'Taylor & Francis',
     'doi': '10.1080/01431161.2017.1351784',
-    'url': 'https://doi.org/10.1080/01431161.2017.1351784'
+    'url': 'https://doi.org/10.1080/01431161.2017.1351784',
+    'abstract': 'The Defense Meteorological Satellite Program’s Operational Linescan System (DMSP/OLS) records visible and near-infrared light from clouds and the Earth’s surface at night, and in doing so provides not only visually arresting images of the Earth at night but also a geospatial time series of data that has proved to be a valuable source for both the natural and social sciences. Remote sensing of night-time light is a relatively new field in remote sensing, with origins that can be traced back to 1980s. It has become a particular focus since 2011, when a research group led by Dr Christopher Elvidge of the National Oceanic and Atmospheric Administration (NOAA) released a time series of annual composites of DMSP/OLS.'
   },
   {
     'author': [ 'Xi Li', 'Deren Li', 'Huimin Xu', 'Chuanqing Wu' ],
@@ -231,7 +79,8 @@ const data = [
     'year': '2017',
     'publisher': 'Taylor & Francis',
     'doi': '10.1080/01431161.2017.1331476',
-    'url': 'https://doi.org/10.1080/01431161.2017.1331476'
+    'url': 'https://doi.org/10.1080/01431161.2017.1331476',
+    'abstract': 'Monthly composites of night-time light acquired from the Meteorological Satellite Program’s Operational Linescan System (DMSP/OLS) had been used to evaluate socio-economic dynamics and human rights during the Syrian Civil War, which started in March 2011. However, DMSP/OLS monthly composites are not available subsequent to February 2014, and the only available night-time light composites for that period were acquired from the Suomi National Polar-orbiting Partnership satellite’s Visible Infrared Imaging Radiometer Suite (Suomi NPP/VIIRS). This article proposes an intercalibration model to simulate DMSP/OLS composites from the VIIRS day-and-night band (DNB) composites, by using a power function for radiometric degradation and a Gaussian low pass filter for spatial degradation. The DMSP/OLS data and the simulated DMSP/OLS data were combined to estimate the city light dynamics in Syria’s major human settlement between March 2011 and January 2017. Our analysis shows that Syria’s major human settlement lost about 79% of its city light by January 2017, with Aleppo, Daraa, Deir ez-Zor, and Idlib provinces losing 89%, 90%, 96%, and 99% of their light, respectively, indicating that these four provinces were most affected by the war. We also found that the city light in Syria and 12 provinces rebounded from early 2016 to January 2017, possibly as a result of the peace negotiation signed in Geneva.'
   },
   {
     'author': [ 'Deren Li', 'Xia Zhao', 'Xi Li' ],
@@ -243,7 +92,8 @@ const data = [
     'year': '2016',
     'publisher': 'Taylor & Francis',
     'doi': '10.1080/10095020.2016.1159389',
-    'url': 'https://doi.org/10.1080/10095020.2016.1159389'
+    'url': 'https://doi.org/10.1080/10095020.2016.1159389',
+    'abstract': 'City lights, fishing boats, and oil fields are the major sources of nighttime lights, therefore the nighttime light images provide a unique source to map human beings and their activities from outer space. While most of the scholars focused on application of nighttime light remote sensing in urbanization and regional development, the actual fields are much wider. This paper summarized the applications of nighttime light remote sensing into fields such as the estimation of socioeconomic parameters, monitoring urbanization, evaluation of important events, analyzing light pollution, fishery, etc. For estimation of socioeconomic parameters, the most promising progress is that Gross Domestic Product and its growth rate have been estimated with statistical data and nighttime light data using econometric models. For monitoring urbanization, urban area and its dynamics can be extracted using different classification methods, and spatial analysis has been employed to map urban agglomeration. As sharp changes of nighttime light are associated with important socioeconomic events, the images have been used to evaluate humanitarian disasters, especially in the current Syrian and Iraqi wars. Light pollution is another hotspot of nighttime light application, as the night light is related to some diseases and abnormal behavior of animals, and the nighttime light images can provide light pollution information on large scales so that it is much easier to analyze the effects of light pollutions. In each field, we listed typical cases of the applications. At last, future studies of nighttime light remote sensing have been predicted.'
   },
   {
     'author': [ 'Xi Li', 'Rui Zhang', 'Chengquan Huang', 'Deren Li' ],
@@ -255,7 +105,8 @@ const data = [
     'year': '2015',
     'publisher': 'Taylor & Francis}',
     'doi': '10.1080/01431161.2015.1059968',
-    'url': 'https://doi.org/10.1080/01431161.2015.1059968'
+    'url': 'https://doi.org/10.1080/01431161.2015.1059968',
+    'abstract': 'The territory controlled by the Islamic State of Iraq and Syria (ISIS) has grown rapidly since the start of the Syrian Civil War. In 2014, ISIS expanded its control into Northern Iraq, leading to a major humanitarian crisis in the region. This study makes use of night-time light images to detect the ISIS offensive against Iraq in 2014. We developed an algorithm to separate city lights from oilfield lights, based on an urban extent map. The image analysis indicates that all Northern Iraqi provinces experienced a large reduction in city lighting, varying from 16% to 93%. This reduction is especially evident in the three ISIS-controlled provinces, Al-Anbar, Saladin, and Ninawa, where the reduction of city lighting from May to December 2014 was 59%, 50%, and 93%, respectively. Most of the ISIS-controlled cities, including Mosul and Tikrit, experienced a loss of more than 90% in city lighting after being seized by ISIS, while the cities controlled by the Iraqi security forces (ISF) did not lose as much lighting. In contrast, the city lights in Ar Raqqa, Syria, ISIS’s de facto capital, did not show a decline after that region was seized by ISIS. We conclude that the conflict in Northern Iraq has resulted in a major loss of city lighting and that this loss is most likely due to lack of access to the Iraqi electricity supply grid rather than a deliberate ISIS strategy.'
   },
   {
     'author': [ 'Xi Li', 'Linlin Ge', 'Xiaonling Chen' ],
@@ -267,7 +118,8 @@ const data = [
     'year': '2014',
     'publisher': '',
     'doi': '10.1109/LGRS.2014.2304496',
-    'url': 'https://doi.org/10.1109/LGRS.2014.2304496'
+    'url': 'https://doi.org/10.1109/LGRS.2014.2304496',
+    'abstract': 'In this study, a model is developed to quantify the land use contribution to nighttime light using coarse-resolution nighttime light imagery and fine-resolution land use data. We assumed that the nighttime light of a region can be represented by a linear combination of land use areas, with its nighttime light intensity (NLI) as coefficient. Based on an unmixing strategy, the NLI of each land use type was estimated. The Berlin City and MA State were used as study areas. For the Berlin City, we made use of nighttime light imagery from the Suomi National Polar-orbiting Partnership and the land use maps with 52 classes as data sets for analysis, and we used a nighttime aerial photograph to derive reference data. For the MA State, we made use of nighttime light imagery from the Defense Meteorological Satellite Program\'s Operational Linescan System and the land use maps with 33 classes as data sets for analysis, and we used a nighttime photograph from the International Space Station to derive reference data. The reference NLI data were correlated with the estimated NLI data, and the R 2 values of Berlin and Massachusetts were 0.7277 and 0.7982, respectively, proving that the proposed model is effective.'
   },
   {
     'author': [ 'Xi Li', 'Deren Li' ],
@@ -279,7 +131,8 @@ const data = [
     'year': '2014',
     'publisher': '',
     'doi': '10.1080/01431161.2014.971469',
-    'url': 'https://doi.org/10.1080/01431161.2014.971469'
+    'url': 'https://doi.org/10.1080/01431161.2014.971469',
+    'abstract': 'This study investigates whether night-time light images acquired from the Defense Meteorological Satellite Program’s Operational Linescan System provide spatial and temporal insight with regard to the humanitarian aspects of the Syrian crisis. Evaluating the ongoing crisis in Syria is challenging since reliable witness reports are hard to gather in a war zone. Therefore satellite images, as one of the few sources of objective information, are potentially of great importance. We used 38 monthly Defense Meteorological Satellite Program’s Operational Linescan System composites covering the period between January 2008 and February 2014. The results indicate that night-time light and lit area in Syria declined by about 74% and 73%, respectively, between March 2011 and February 2014. In 12 of 14 provinces, night-time light declined by >60%. Damascus and Quneitra are the exceptions, with night-time light having declined only by about 35%. Notably, the number of internally displaced persons (IDPs) of each province shows a linear correlation with night-time light loss, with an R2 value of 0.52. Through clustering the time series images, we found that the international border of Syria represents a distinct boundary between regions of differing night-time light spatiotemporal patterns. The contrast across the border increases as the region studied encompasses a wider zone on either side of the border. These findings lend support to the hypothesis that night-time light can be a useful source for monitoring humanitarian crises such as that unfolding in Syria.'
   },
   {
     'author': [ 'Xi Li', 'Fengrui Chen', 'Xiaoling Chen' ],
@@ -291,7 +144,8 @@ const data = [
     'year': '2013',
     'publisher': '',
     'doi': '10.1109/JSTARS.2013.2241021',
-    'url': 'https://doi.org/10.1109/JSTARS.2013.2241021'
+    'url': 'https://doi.org/10.1109/JSTARS.2013.2241021',
+    'abstract': 'The objective of this research is to investigate the potential of nighttime light images, acquired with Defense Meteorological Satellite Program Operational Linescan System (DMSP-OLS), in evaluating global armed conflicts. To achieve this purpose, we assessed the relationship between armed conflicts and the satellite-observed nighttime light variation over 159 countries through annual composites of the nighttime light images. Firstly, a light ratio index was developed to reduce the data inconsistency of annual nighttime light images during 1992-2010. Then 12 countries were selected as examples for a primary investigation, and we found the outbreak of a war can reduce the light and the ceasefire can increase the light from the remote sensing images, which indicates armed conflict events always have significant impact on the nighttime light. Based on this assertion, a nighttime light variation index (NLVI) was developed to quantify the variation of the time series nighttime light. Then using conditional probability analysis, the probability of a country suffering from armed conflicts increases with increase of NLVI. Particularly, when the NLVI value is in a very high level as defined, 80% of the countries have experienced armed conflicts. Furthermore, using correlation analysis, the number of global armed conflicts is highly correlated with the global NLVI in temporal dimension, with a correlation coefficient larger than 0.77. In summary, the potential of nighttime light images in armed conflict evaluation is extended from a regional scale to a global scale by this study.'
   },
   {
     'author': [ 'Xi Li', 'Xiaoling Chen', 'Yousong Zhao',
@@ -304,7 +158,8 @@ const data = [
     'year': '2013',
     'publisher': '',
     'doi': '10.1080/2150704X.2012.687471',
-    'url': 'https://doi.org/10.1080/2150704X.2012.687471'
+    'url': 'https://doi.org/10.1080/2150704X.2012.687471',
+    'abstract': 'In remote-sensing community, radiometric calibration of night-time light images has long been a problem, hindering change detection of images in different dates. Currently, an intercalibration model is regarded as the unique solution for the problem, but prior knowledge is needed to extract reference pixels with stable lights, which are hard to obtain in most of the applications. This study proposed an automatic algorithm to extract the reference pixels for convenient use of the intercalibration model, with an assumption that there are sufficient pixels with stable night-time lights in the multi-temporal images. To automatically extract the stable pixels from images in two dates, all pixels in the two dates were entered into a linear regression model, and the outliers viewed as suspected changed pixels were discarded iteratively. Consequently, some stable pixels were extracted and the intercalibration model was implemented. Annual night-time light composites in Beijing, China, from 1992 to 2010 were taken as the study material, and the results show that the multi-temporal calibrated night-time light data have higher correlation with gross domestic production (GDP) (R^2 = 0.8734) and urban population (UP) (R^2 = 0.9269) than those of the uncalibrated images (with the R^2 values 0.7963 and 0.8575, respectively). Furthermore, the data inconsistency from different night-time light satellites in the same year was reduced with the proposed algorithm. The results demonstrate that the proposed algorithm is effective in intercalibrating the Defense Meteorological Satellite Program\'s Operational Linescan System (DMSP-OLS) images automatically.'
   },
   {
     'author': [ 'Xi Li', 'Wentao Ye', 'Xiaoling Chen',
@@ -317,7 +172,8 @@ const data = [
     'year': '2012',
     'publisher': '',
     'doi': '10.1080/01431161.2012.657360',
-    'url': 'https://doi.org/10.1080/01431161.2012.657360'
+    'url': 'https://doi.org/10.1080/01431161.2012.657360',
+    'abstract': 'Super resolution (SR)-based spectral unmixing (SRSU) is a recently developed spectral unmixing approach. Some issues in SRSU, such as the role of training database, remain unclear. According to the example-based SR reconstruction, training databases impact the reconstruction and consequently may also impact SRSU. This study investigated how training databases affect the SRSU, so the training database can be designed appropriately. A Markov network model was employed as a way to implement SR reconstruction. Ten training databases, derived from different types of remotely sensed images and non-remotely sensed images, were constructed and each training database-based SRSU was evaluated with respect to unmixing accuracy. Surprisingly, the experiments revealed that the SRSU performance is not sensitive to the types of training databases, since different training databases resulted in similar accuracy in spectral unmixing.'
   },
   {
     'author': [ 'Xi Li', 'Liqiao Tian', 'Xi Zhao', 'Xiaoling Chen' ],
@@ -329,7 +185,8 @@ const data = [
     'year': '2011',
     'publisher': '',
     'doi': '10.1080/01431161.2010.507794',
-    'url': 'https://doi.org/10.1080/01431161.2010.507794'
+    'url': 'https://doi.org/10.1080/01431161.2010.507794',
+    'abstract': 'It is well known that coarse spatial resolution is an important factor for the occurrence of mixed pixels in remote sensing images, and conventional approaches for spectral unmixing adopt various techniques on spectral dimension only in a fixed spatial resolution. In this article, a super resolution (SR) approach for spectral unmixing is proposed, based on the assumption that increasing the spatial resolution helps to retrieve the composition of a pixel. Firstly, a remote sensing image is downscaled into an SR image using example-based kernel ridge regression (EBKRR). Secondly, the SR image is classified using supervised hard classification, and then the class map is decomposed into thematic class layers. Thirdly, the thematic class layers are upscaled into the original spatial resolution with an averaging operation, and the abundance maps are finally derived. In two simulated data-based experiments and one ground data-based experiment, this approach was compared with linear spectral mixture analysis (LSMA) and artificial neural network (ANN)-based spectral unmixing methods. The accuracy assessment indicated that the SR approach outperformed LSMA and ANN under measurements of mean absolute error and absolute bias in the three experiments.'
   },
   {
     'author': [ 'Xi Li', 'Shanshan Liu',  'Michael Jendryke', 'Deren Li',  'Chuanqing Wu' ],
@@ -341,7 +198,8 @@ const data = [
     'year': '2018',
     'publisher': '',
     'doi': '10.3390/rs10060858',
-    'url': 'http://dx.doi.org/10.3390/rs10060858'
+    'url': 'http://dx.doi.org/10.3390/rs10060858',
+    'abstract': 'In this study, we analyzed the night-time light dynamics in Iraq over the period 2012–2017 by using Visible Infrared Imaging Radiometer Suite (VIIRS) monthly composites. The data quality of VIIRS images was improved by repairing the missing data, and the Night-time Light Ratio Indices (NLRIs), derived from urban extent map and night-time light images, were calculated for different provinces and cities. We found that when the Islamic State of Iraq and Syria (ISIS) attacked or occupied a region, the region lost its light rapidly, with the provinces of Al-Anbar, At-Ta’min, Ninawa, and Sala Ad-din losing 63%, 73%, 88%, and 56%, of their night-time light, respectively, between December 2013 and December 2014. Moreover, the light returned after the Iraqi Security Forces (ISF) recaptured the region. In addition, we also found that the night-time light in the Kurdish Autonomous Region showed a steady decline after 2014, with the Arbil, Dihok, and As-Sulaymaniyah provinces losing 47%, 18%, and 31% of their night-time light between December 2013 and December 2016 as a result of the economic crisis in the region. The night-time light in Southern Iraq, the region controlled by Iraqi central government, has grown continuously; for example, the night-time light in Al Basrah increased by 75% between December 2013 and December 2017. Regions formerly controlled by ISIS experienced a return of night-time light during 2017 as the ISF retook almost all this territory in 2017. This indicates that as reconstruction began, electricity was re-supplied in these regions. Our analysis shows the night-time light in Iraq is directly linked to the socioeconomic dynamics of Iraq, and demonstrates that the VIIRS monthly night-time light images are an effective data source for tracking humanitarian disasters in that country.'
   },
   {
     'author': [ 'Xi Li', 'Lixian Zhao', 'Deren Li', 'Huimin Xu' ],
@@ -353,7 +211,8 @@ const data = [
     'year': '2018',
     'publisher': '',
     'doi': '10.3390/s18113665',
-    'url': 'http://dx.doi.org/10.3390/s18113665'
+    'url': 'http://dx.doi.org/10.3390/s18113665',
+    'abstract': 'Luojia 1-01 satellite, launched on 2 June 2018, provides a new data source of nighttime light at 130 m resolution and shows potential for mapping urban extent. In this paper, using Luojia 1-01 and VIIRS nighttime light imagery, we compared several methods for extracting urban areas, including Human Settlement Index (HSI), Simple Thresholding Segmentation (STS) and SVM supervised classification. According to the accuracy assessment, the HSI method using LJ1-01 data had the best performance in urban extent extraction, which presented the largest Kappa Coefficient value, 0.834, among all the results. For the urban areas extracted by VIIRS based HSI method, the largest Kappa Coefficient value was 0.772. In contrast, the largest Kappa Coefficient values obtained by STS method were 0.79 and 0.7512 respectively when using LJ1-01 and VIIRS data, while for SVM method the values were 0.7829 and 0.7486 when using Landsat-LJ and Landsat-VIIRS composite data respectively. The experimented results demonstrated that the utilization of nighttime light imagery can largely improve the accuracy of urban extent extraction and LJ1-01 data, with a higher resolution and more abundant spatial information, can lead to better identification results than its predecessors.'
   },
   {
     'author': [ 'Fengrui Chen', 'Xi Li' ],
@@ -365,7 +224,8 @@ const data = [
     'year': '2016',
     'publisher': '',
     'doi': '10.3390/rs8060472',
-    'url': 'http://dx.doi.org/10.3390/rs8060472'
+    'url': 'http://dx.doi.org/10.3390/rs8060472',
+    'abstract': 'As the successor of the Tropical Rainfall Measuring Mission (TRMM), the Global Precipitation Measurement (GPM) mission significantly improves the spatial resolution of precipitation estimates from 0.25° to 0.1°. The present study analyzed the error structures of Integrated Multisatellite Retrievals for GPM (IMERG) monthly precipitation products over Mainland China from March 2014 to February 2015 using gauge measurements at multiple spatiotemporal scales. Moreover, IMERG products were also compared with TRMM 3B43 products. The results show that: (1) overall, IMERG can capture the spatial patterns of precipitation over China well. It performs a little better than TRMM 3B43 at seasonal and monthly scales; (2) the performance of IMERG varies greatly spatially and temporally. IMERG performs better at low latitudes than at middle latitudes, and shows worse performance in winter than at other times; (3) compared with TRMM 3B43, IMERG significantly improves the estimation accuracy of precipitation over the Xinjiang region and the Qinghai-Tibetan Plateau, especially over the former where IMERG increases Pearson correlation coefficient by 0.18 and decreases root-mean-square error by 54.47 mm for annual precipitation estimates. However, most IMERG products over these areas are unreliable; and (4) IMERG shows poor performance in winter as TRMM 3B43 even if GPM improved its ability to sense frozen precipitation. Most of them over North China are unreliable during this period.'
   },
   {
     'author': [ 'Huimin Xu', 'Hutao Yang', 'Xi Li', 'Huiran Jin', 'Deren Li' ],
@@ -377,7 +237,8 @@ const data = [
     'year': '2015',
     'publisher': '',
     'doi': '10.3390/su71013469',
-    'url': 'http://dx.doi.org/10.3390/su71013469'
+    'url': 'http://dx.doi.org/10.3390/su71013469',
+    'abstract': 'This study used the Night Light Development Index (NLDI) to measure the regional inequality of public services in Mainland China at multiple scales. The NLDI was extracted based on a Gini Coefficient approach to measure the spatial differences of population distribution and night light distribution. Population data were derived from the dataset of China’s population density grid, and night light data were acquired from satellite imagery. In the multi-scale analysis, we calculated the NLDI for China as a whole, eight economic regions, 31 provincial regions, and 354 prefectural cities for the two years of 2005 and 2010. The results indicate that Southwest China and Northwest China are the regions with the most unequal public services, with NLDI values of 0.7116 and 0.7251 for 2005, respectively, and 0.6678 and 0.6304 for 2010, respectively. In contrast, Northern Coastal China had the lowest NLDI values of 0.4775 and 0.4312 for 2005 and 2010, respectively, indicating that this region had the most equal public services. Also, the regional inequality of Mainland China in terms of NLDI has been reduced from 0.6161 to 0.5743 during 2005–2010. The same pattern was observed from the provincial and prefectural analysis, suggesting that public services in Mainland China became more equal within the five-year period. A regression analysis indicated that provincial and prefectural regions with more public services per capita and higher population density had more equal public services.'
   },
   {
     'author': [ 'Xi Li', 'Huimin Xu', 'Xiaoling Chen', 'Chang Li' ],
@@ -389,7 +250,8 @@ const data = [
     'year': '2013',
     'publisher': '',
     'doi': '10.3390/rs5063057',
-    'url': 'http://dx.doi.org/10.3390/rs5063057'
+    'url': 'http://dx.doi.org/10.3390/rs5063057',
+    'abstract': 'Historically, the Defense Meteorological Satellite Program’s Operational Linescan System (DMSP-OLS) was the unique satellite sensor used to collect the nighttime light, which is an efficient means to map the global economic activities. Since it was launched in October 2011, the Visible Infrared Imaging Radiometer Suite (VIIRS) sensor on the Suomi National Polar-orbiting Partnership (NPP) Satellite has become a new satellite used to monitor nighttime light. This study performed the first evaluation on the NPP-VIIRS nighttime light imagery in modeling economy, analyzing 31 provincial regions and 393 county regions in China. For each region, the total nighttime light (TNL) and gross regional product (GRP) around the year of 2010 were derived, and a linear regression model was applied on the data. Through the regression, the TNL from NPP-VIIRS were found to exhibit R2 values of 0.8699 and 0.8544 with the provincial GRP and county GRP, respectively, which are significantly stronger than the relationship between the TNL from DMSP-OLS (F16 and F18 satellites) and GRP. Using the regression models, the GRP was predicted from the TNL for each region, and we found that the NPP-VIIRS data is more predictable for the GRP than those of the DMSP-OLS data. This study demonstrates that the recently released NPP-VIIRS nighttime light imagery has a stronger capacity in modeling regional economy than those of the DMSP-OLS data. These findings provide a foundation to model the global and regional economy with the recently availability of the NPP-VIIRS data, especially in the regions where economic census data is difficult to access.'
   },
   {
     'author': [ 'Xi Li', 'Linlin Ge', 'Xiaoling Chen' ],
@@ -401,7 +263,8 @@ const data = [
     'year': '2013',
     'publisher': '',
     'doi': '10.3390/rs5094551',
-    'url': 'http://dx.doi.org/10.3390/rs5094551'
+    'url': 'http://dx.doi.org/10.3390/rs5094551',
+    'abstract': 'Zimbabwe’s economy declined between 2000 and 2009. This study detects the economic decline in different regions of Zimbabwe using nighttime light imagery from the Defense Meteorological Satellite Program’s Operational Linescan System (DMSP-OLS). We found a good correlation (coefficient = 0.7361) between Zimbabwe’s total nighttime light (TNL) and Gross Domestic Product (GDP) for the period 1992 to 2009. Therefore, TNL was used as an indicator of regional economic conditions in Zimbabwe. Nighttime light imagery from 2000 and 2008 was compared at both national and regional scales for four types of regions. At the national scale, we found that nighttime light in more than half of the lit area decreased between 2000 and 2008. Moreover, within the four region types (inland mining towns, inland agricultural towns, border towns and cities) we determined that the mining and agricultural sectors experienced the most severe economic decline. Some of these findings were validated by economic survey data, proving that the nighttime light data is a potential data source for detecting the economic decline in Zimbabwe.'
   },
   {
     'author': [ 'Wentao Ye', 'Xi Li', 'Xiaoling Chen', 'Guo Zhang' ],
@@ -413,19 +276,31 @@ const data = [
     'year': '2014',
     'publisher': '',
     'doi': '10.1117/12.2068775',
-    'url': 'https://doi.org/10.1117/12.2068775'
+    'url': 'https://doi.org/10.1117/12.2068775',
+    'abstract': 'Forest cover maps are essential for current researches of biomass estimation and global change, but traditional methods to derive forest maps are complex. These methods usually need training samples or other ancillary data as input, and are time- and labor- consuming for large scale applications. To make the process of forest cover mapping simple and rapid, in this paper, a simple spectral index called forest index (FI) was proposed to highlight forest land cover in Landsat scenes. The FI is derived from three bands, green, red and near-infrared (NIR) bands and an FI image can be classified into forest/non-forest map with a threshold. The overall accuracies of classification maps in the two study areas were 97.8% and 96.2%, respectively, which indicates that the FI is efficient at highlighting forest cover.'
   }
 ];
 
 const Research = props => {
   const { _ } = props;
 
+  const Author = (list) => {
+    const tagList = []
+    list.forEach((item) => {
+      tagList.push(<Tag color={item === 'Xi Li' ? 'blue' : ''} key={item}>{item}</Tag>);
+    })
+    return <div>{tagList}</div>
+  }
+
   return (
     <PageHeaderWrapper
       style={{ backgroundColor: "#fff" }}
     >
       <Row>
-        <Title level={4}><FormattedMessage id="research.title"/></Title>
+        <Title level={4}><FormattedMessage id="research.project.title"/></Title>
+      </Row>
+      <Row>
+        <Title level={4}><FormattedMessage id="research.paper.title"/></Title>
       </Row>
       <List
         itemLayout="vertical"
@@ -447,20 +322,21 @@ const Research = props => {
           >
             <List.Item
               key={item.title}
-              extra={
-                <img
-                  width={260}
-                  alt="logo"
-                  src="https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png"
-                />
-              }
+              // extra={
+              //   <img
+              //     width={260}
+              //     alt="logo"
+              //     src="https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png"
+              //   />
+              // }
             >
               <List.Item.Meta
-                // avatar={<Avatar src={item.avatar} />}
-                title={<a href={item.href} target="_blank">{item.title}</a>}
-                description={item.description}
+                title={<a href={item.url} target="_blank">{item.title}</a>}
+                description={Author(item.author)}
               />
-              {item.content}
+              <Paragraph ellipsis={{ rows: 3, expandable: true, symbol: 'more' }}>
+                {item.abstract}
+              </Paragraph>
             </List.Item>
           </Card>
         )}
