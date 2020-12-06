@@ -43,22 +43,40 @@ export default defineConfig({
               component: './Profile',
             },
             {
+              path: '/project',
+              name: 'project',
+              icon: 'smile',
+              component: './Project',
+            },
+            {
               path: '/research',
               name: 'research',
               icon: 'smile',
               component: './Research',
             },
-            {
-              name: 'cooperation',
-              icon: 'table',
-              path: '/cooperation',
-              component: './Cooperation',
-            },
+            // {
+            //   name: 'cooperation',
+            //   icon: 'table',
+            //   path: '/cooperation',
+            //   component: './Cooperation',
+            // },
+            // {
+            //   name: 'news',
+            //   icon: 'table',
+            //   path: '/news',
+            //   component: './News',
+            // },
             {
               name: 'team',
               icon: 'team',
               path: '/team',
               component: './Team',
+            },
+            {
+              name: 'popular-science',
+              icon: 'team',
+              path: '/ps',
+              component: './PopularScience',
             },
             {
               component: './404',

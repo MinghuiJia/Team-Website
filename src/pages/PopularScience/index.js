@@ -5,15 +5,20 @@
  */
 
 import { PageHeaderWrapper } from '@ant-design/pro-layout';
-// import {  } from 'antd';
 import { connect } from 'dva';
+import React from "react";
 
-const News = props => {
+
+const PopularScience = props => {
   const { _ } = props;
 
   return (
     <PageHeaderWrapper>
       媒体报道
+      <video controls width="250">
+        <source src="https://sharedocs.oss-cn-beijing.aliyuncs.com/midtown.mp4"
+                type="video/mp4" />
+      </video>
     </PageHeaderWrapper>
   )
 };
@@ -22,4 +27,4 @@ export default connect(({}) => {
   return {
 
   }
-})(News);
+})(PopularScience);
