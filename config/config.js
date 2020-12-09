@@ -60,12 +60,12 @@ export default defineConfig({
             //   path: '/cooperation',
             //   component: './Cooperation',
             // },
-            // {
-            //   name: 'news',
-            //   icon: 'table',
-            //   path: '/news',
-            //   component: './News',
-            // },
+            {
+              name: 'news',
+              icon: 'table',
+              path: '/news',
+              component: './News',
+            },
             {
               name: 'team',
               icon: 'team',

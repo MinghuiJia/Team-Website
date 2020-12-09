@@ -10,15 +10,15 @@ import { connect } from 'dva';
 import {FormattedMessage} from "umi";
 import React from "react";
 
-const { Title, Paragraph } = Typography;
+const { Title, Paragraph, Text } = Typography;
 const { Meta } = Card;
 
 const paper = [
   {
-    'author': [ 'Levin, Noam', 'Kyba, Christopher C.M.', 'Zhang, Qingling',
-      'Sánchez de Miguel, Alejandro', 'Román, Miguel O.', 'Xi Li',
-      'Portnov, Boris A.', 'Molthan, Andrew L.', 'Jechow, Andreas',
-      'Miller, Steven D.', 'Wang, Zhuosen', 'Shrestha, Ranjay M.', 'Elvidge, Christopher D.',
+    'author': [ 'Levin Noam', 'Kyba Christopher C.M.', 'Zhang Qingling',
+      'Sánchez de Miguel Alejandro', 'Román Miguel O.', 'Xi Li',
+      'Portnov Boris A.', 'Molthan Andrew L.', 'Jechow Andreas',
+      'Miller Steven D.', 'Wang Zhuosen', 'Shrestha Ranjay M.', 'Elvidge Christopher D.',
     ],
     'title': 'Remote sensing of night lights: A review and an outlook for the future.',
     'journal': 'Remote Sensing of Environment',
@@ -32,7 +32,7 @@ const paper = [
     'abstract': 'Remote sensing of night light emissions in the visible band offers a unique opportunity to directly observe human activity from space. This has allowed a host of applications including mapping urban areas, estimating population and GDP, monitoring disasters and conflicts. More recently, remotely sensed night lights data have found use in understanding the environmental impacts of light emissions (light pollution), including their impacts on human health. In this review, we outline the historical development of night-time optical sensors up to the current state of the art sensors, highlight various applications of night light data, discuss the special challenges associated with remote sensing of night lights with a focus on the limitations of current sensors, and provide an outlook for the future of remote sensing of night lights. While the paper mainly focuses on space borne remote sensing, ground based sensing of night-time brightness for studies on astronomical and ecological light pollution, as well as for calibration and validation of space borne data, are also discussed. Although the development of night light sensors lags behind day-time sensors, we demonstrate that the field is in a stage of rapid development. The worldwide transition to LED lights poses a particular challenge for remote sensing of night lights, and strongly highlights the need for a new generation of space borne night lights instruments. This work shows that future sensors are needed to monitor temporal changes during the night (for example from a geostationary platform or constellation of satellites), and to better understand the angular patterns of light emission (roughly analogous to the BRDF in daylight sensing). Perhaps most importantly, we make the case that higher spatial resolution and multispectral sensors covering the range from blue to NIR are needed to more effectively identify lighting technologies, map urban functions, and monitor energy use.'
   },
   {
-    'author': [ "Xia Zhao", "Xi Li", "Yuyu Zhou", "Deren Li" ],
+    'author': [ "Xia Zhao", "Xi Li*", "Yuyu Zhou*", "Deren Li" ],
     'title': 'Analyzing Urban Spatial Connectivity Using Night Light Observations: A Case Study of Three Representative Urban Agglomerations in China',
     'journal': 'IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing',
     'volume': '13',
@@ -45,7 +45,20 @@ const paper = [
     'abstract': '  Urban connectivity information is important for regional planning of sustainable development goals. However, there are still challenges in deriving the spatial connectivity relationship among urban areas. The nighttime light data measure anthropogenic phenomenon remotely and can be seen as a unique source for monitoring urban spatial expansion and human activities. This study presents an object-based approach for investigating spatial connectivity among urban patches by incorporating Suomi National Polar-Orbiting Partnership Visible Infrared Imaging Radiometer Suite Day/Night Band and land use data collected in 2015. A graph-based method is used to construct connectivity networks and explore spatial patterns considering both quantity and quality of connections in three vibrant urban agglomerations in China, namely, Jing-Jin-Ji (JJJ), Yangtze River Delta (YRD), and Pearl River Delta (PRD) megaregions. Results indicate that networks follow a power law distribution according to cumulative degree distributions. A closer connectivity relationship exists among urban patches in PRD, with a relatively high-intensity connection ratio and a mean degree of 4.5, compared with YRD and JJJ. Block-like connections are observed in core areas of all urban agglomerations (UAs), and single-tree connections are found in peripheral areas. This article implies a significant inequality in the regional development and hub-spoke structures with hubs of provincial capitals and municipalities. Our proposed framework is transferrable for the analysis of connectivity relationship in other regions, and the outcome can contribute to the study of evolution of UAs and bring insights to policymakers for sustainable development at regional level.'
   },
   {
-    'author': [ "Zimin Yin", "Xi Li", "Fei Tong", "Zhibiao Li", "Michael Jendryke" ],
+    'author': [ "Lin Zhang", "Xi Li*", "Fengrui Chen" ],
+    'title': 'Spatiotemporal Analysis of Venezuela\'s Nighttime Light During the Socioeconomic Crisis',
+    'journal': 'IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing',
+    'volume': '13',
+    'number': '',
+    'pages': '2396-2408',
+    'year': '2020',
+    'publisher': '',
+    'doi': '10.1109/JSTARS.2020.2995695',
+    'url': 'https://doi.org/10.1109/JSTARS.2020.2995695',
+    'abstract': 'The lack of official statistics makes it difficult to assess Venezuela\'s economic situation during the socioeconomic crisis. In this article, we used Visible Infrared Imaging Radiometer Suite (VIIRS) nighttime light images to evaluate Venezuela\'s crisis. The Hodrick-Prescott filter was used to decompose the sum of urban light (SUL) into two components: the sum of urban light trend (SULT) and the SUL cycle. Then, we proposed an index of nighttime light change ratio to estimate Venezuelan nighttime light dynamics. We found that Venezuela has lost 30.37% of its SULT from April 2012 to December 2018. The regression analysis shows that Venezuelan SULT had a strong relationship to a number of socioeconomic indicators: the SULT was positively correlated to crude oil production with R2 of 0.9159, negatively correlated to dollar exchange rate with R2 of 0.9516, and negatively correlated to the number of asylum seekers with R2 of 0.8384. We also found that among the three states with a largest nighttime light decrease, the economy of two states was dominated by agriculture and that of one state was dominated by the oil industry. In the pixel analysis, compared with the urban cores, the suburbs of urban cores of 12 main cities had a higher percentage of SULT increased areas. Around the Venezuela-Colombia border, the SULT decreased in the Venezuelan side but increased in the Colombian side. Our analysis suggests that nighttime light imagery can help to assess Venezuela\'s situation during the crisis.'
+  },
+  {
+    'author': [ "Zimin Yin", "Xi Li*", "Fei Tong", "Zhibiao Li", "Michael Jendryke" ],
     'title': 'Tracing cultural festival patterns using time-series of VIIRS monthly products',
     'journal': 'International Journal of Remote Sensing',
     'volume': '41',
@@ -125,7 +138,7 @@ const paper = [
     'abstract': 'After social and economic problems, Algeria regained its night-time light (NL) brightness as this analysis of space-borne images shows. We evaluate the advancement of artificial light sources and the socioeconomic development between 1992 to 2012 for all 48 provinces. Image calibration improved the consistency and comparability of the DMSP-OLS data. Light detected from gas flaring has been separated to focus on light from human settlements. We then estimated the relationship between night-time light and selected socioeconomic parameters (SEP). Night-time light growth (NLG) and night-time light annual growth (NLAG) indices are calculated at the national, regional and provincial level. Considering the Oil price crash and the Algerian Civil Concord, we take a detailed look at these historic events in Algeria. Our main findings are: (A) The total night-time light (TNL) for human settlements grew nationwide by 128%, (B) night-time light data correlates with socioeconomic parameters such as population, and electric power consumption, (C) the oil price crash resulted in slower night-time light growth, while the Algerian Civil Concord and the end of the crises led to increased TNL, (D) because of government investment, the High Plateaus are the fastest growing region since the end of the crises, (E) space-borne night-time light data can consistently fill the information gap when data from official sources are not available. Government and policy-making bodies may benefit from the presented findings allowing them to oversee and address provincial inequalities and economic development.'
   },
   {
-    'author': [ 'Xia Zhao','Deren Li','Xi Li','Lixian Zhao','Chuanqing Wu' ],
+    'author': [ 'Xia Zhao','Deren Li','Xi Li*','Lixian Zhao','Chuanqing Wu' ],
     'title': 'Spatial and seasonal patterns of night-time lights in global ocean derived from VIIRS DNB images',
     'journal': 'International Journal of Remote Sensing',
     'volume': '39',
@@ -204,7 +217,7 @@ const paper = [
     'abstract': 'City lights, fishing boats, and oil fields are the major sources of nighttime lights, therefore the nighttime light images provide a unique source to map human beings and their activities from outer space. While most of the scholars focused on application of nighttime light remote sensing in urbanization and regional development, the actual fields are much wider. This paper summarized the applications of nighttime light remote sensing into fields such as the estimation of socioeconomic parameters, monitoring urbanization, evaluation of important events, analyzing light pollution, fishery, etc. For estimation of socioeconomic parameters, the most promising progress is that Gross Domestic Product and its growth rate have been estimated with statistical data and nighttime light data using econometric models. For monitoring urbanization, urban area and its dynamics can be extracted using different classification methods, and spatial analysis has been employed to map urban agglomeration. As sharp changes of nighttime light are associated with important socioeconomic events, the images have been used to evaluate humanitarian disasters, especially in the current Syrian and Iraqi wars. Light pollution is another hotspot of nighttime light application, as the night light is related to some diseases and abnormal behavior of animals, and the nighttime light images can provide light pollution information on large scales so that it is much easier to analyze the effects of light pollutions. In each field, we listed typical cases of the applications. At last, future studies of nighttime light remote sensing have been predicted.'
   },
   {
-    'author': [ 'Fengrui Chen', 'Xi Li' ],
+    'author': [ 'Fengrui Chen*', 'Xi Li*' ],
     'title': 'Evaluation of IMERG and TRMM 3B43 Monthly Precipitation Products over Mainland China',
     'journal': 'Remote Sens',
     'volume': '8',
@@ -217,7 +230,7 @@ const paper = [
     'abstract': 'As the successor of the Tropical Rainfall Measuring Mission (TRMM), the Global Precipitation Measurement (GPM) mission significantly improves the spatial resolution of precipitation estimates from 0.25° to 0.1°. The present study analyzed the error structures of Integrated Multisatellite Retrievals for GPM (IMERG) monthly precipitation products over Mainland China from March 2014 to February 2015 using gauge measurements at multiple spatiotemporal scales. Moreover, IMERG products were also compared with TRMM 3B43 products. The results show that: (1) overall, IMERG can capture the spatial patterns of precipitation over China well. It performs a little better than TRMM 3B43 at seasonal and monthly scales; (2) the performance of IMERG varies greatly spatially and temporally. IMERG performs better at low latitudes than at middle latitudes, and shows worse performance in winter than at other times; (3) compared with TRMM 3B43, IMERG significantly improves the estimation accuracy of precipitation over the Xinjiang region and the Qinghai-Tibetan Plateau, especially over the former where IMERG increases Pearson correlation coefficient by 0.18 and decreases root-mean-square error by 54.47 mm for annual precipitation estimates. However, most IMERG products over these areas are unreliable; and (4) IMERG shows poor performance in winter as TRMM 3B43 even if GPM improved its ability to sense frozen precipitation. Most of them over North China are unreliable during this period.'
   },
   {
-    'author': [ 'Huimin Xu', 'Hutao Yang', 'Xi Li', 'Huiran Jin', 'Deren Li' ],
+    'author': [ 'Huimin Xu*', 'Hutao Yang', 'Xi Li*', 'Huiran Jin', 'Deren Li' ],
     'title': 'Multi-Scale Measurement of Regional Inequality in Mainland China during 2005–2010 Using DMSP/OLS Night Light Imagery and Population Density Grid Data',
     'journal': 'Sustainability',
     'volume': '7',
@@ -407,15 +420,19 @@ const Research = props => {
     list.forEach((item) => {
       tagList.push(<Tag color={item === 'Xi Li' ||  item === '李熙' ? 'blue' : ''} key={item}>{item}</Tag>);
     })
-    return <div>{tagList}</div>
+    return <>{tagList}</>
   }
 
   const AuthorList = (list) => {
     const tagList = []
     list.forEach((item) => {
-      tagList.push(item);
+      if (item === 'Xi Li' || item === 'Li Xi' || item === '李熙' || item === 'Xi Li*' || item === 'Li Xi*') {
+        tagList.push(<Text strong>{item + ", "}</Text>)
+      } else {
+        tagList.push(item + ", ");
+      }
     })
-    return tagList
+    return <>{tagList}</>
   }
 
   return (
@@ -432,6 +449,7 @@ const Research = props => {
       <List
         itemLayout="vertical"
         dataSource={paper}
+        size="small"
         footer={
           <div>
             <b>仅统计到 2020 年 11 月</b>
@@ -442,7 +460,13 @@ const Research = props => {
             key={item.title}
           >
             <List.Item.Meta
-              title={<a href={item.url} target="_blank">{AuthorList(item.author).toString() + ", " + item.year + ". " + item.title + ", " + item.journal + ", " + item.volume + (item.number === "" ? (item.number) :  ("(" +  item.number + ")")) + ", " + item.pages}</a>}
+              title={
+                <a href={item.url} style={{fontSize: 14}} target="_blank">
+                  {
+                    AuthorList(item.author)
+                  }{item.year + ". " + item.title + ", " + item.journal + ", " + item.volume + (item.number === "" ? (item.number) :  ("(" +  item.number + ")")) + ", " + item.pages}
+                </a>
+              }
             />
           </List.Item>
         )}

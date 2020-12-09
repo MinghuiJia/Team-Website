@@ -5,12 +5,12 @@
  */
 
 import { PageHeaderWrapper } from '@ant-design/pro-layout';
-import { Typography, Row, Table, Tag, Space } from 'antd';
+import { Typography, Row, Table, Tag } from 'antd';
 import { connect } from 'dva';
 import {FormattedMessage} from "umi";
 import React from "react";
 
-const { Title } = Typography;
+const { Title, Text } = Typography;
 
 const students = [
   {
@@ -207,7 +207,9 @@ const Team = props => {
   const { _ } = props;
 
   return (
-    <PageHeaderWrapper style={{ backgroundColor: "#fff" }}>
+    <PageHeaderWrapper style={{ backgroundColor: "#fff" }}
+                       subTitle="我们是一个充满活力且友爱团队，能为你科研提供足够的资源。"
+    >
       <Row>
         {/*<Title level={4}><FormattedMessage id="research.paper.title"/></Title>*/}
         <Title level={4}>指导以及合作指导研究生共 {students.length} 名</Title>
