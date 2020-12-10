@@ -118,9 +118,7 @@ export default () => (
           flex="32rem"
         >
           <Card
-            hoverable={true}
-            cover={<img alt={<FormattedMessage id="home.teacher.research.1.alt" />}
-                        src={require("../../assets/image_1.png")} />}>
+            hoverable={true}>
             <Meta
               title={<FormattedMessage id="home.teacher.research.1.title" />}
               description={<FormattedMessage id="home.teacher.research.1.description" />}
@@ -132,9 +130,7 @@ export default () => (
           flex="32rem"
         >
           <Card
-            hoverable={true}
-            cover={<img alt={<FormattedMessage id="home.teacher.research.2.alt" />}
-                        src={require("../../assets/image_2.png")} />}>
+            hoverable={true}>
             <Meta
               title={<FormattedMessage id="home.teacher.research.2.title" />}
               description={<FormattedMessage id="home.teacher.research.2.description" />}
@@ -146,9 +142,7 @@ export default () => (
           flex="32rem"
         >
           <Card
-            hoverable={true}
-            cover={<img alt={<FormattedMessage id="home.teacher.research.4.alt" />}
-                        src={require("../../assets/image_4.png")} />}>
+            hoverable={true}>
             <Meta
               title={<FormattedMessage id="home.teacher.research.4.title" />}
               description={<FormattedMessage id="home.teacher.research.4.description" />}
