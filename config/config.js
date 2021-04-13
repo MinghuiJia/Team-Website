@@ -54,12 +54,12 @@ export default defineConfig({
               icon: 'smile',
               component: './Research',
             },
-            // {
-            //   name: 'cooperation',
-            //   icon: 'table',
-            //   path: '/cooperation',
-            //   component: './Cooperation',
-            // },
+            {
+              name: 'cooperation',
+              icon: 'table',
+              path: '/cooperation',
+              component: './Cooperation',
+            },
             {
               name: 'news',
               icon: 'table',
