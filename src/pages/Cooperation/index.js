@@ -7,10 +7,10 @@
 import { PageHeaderWrapper } from '@ant-design/pro-layout';
 import { connect } from 'dva';
 import { FormattedMessage } from "umi";
-import {Card, Col, Row, Typography, Image } from "antd";
+import {Card, Col, Image, Row, Typography} from "antd";
 import React from "react";
 
-
+const { Meta } = Card;
 
 const Cooperation = props => {
   const { _ } = props;
@@ -21,38 +21,38 @@ const Cooperation = props => {
         <FormattedMessage id="cooperation.describe"/>
       </Row>
       {/*<Row gutter={[16, 24]}>*/}
-      <Row>
-        <Image
+      {/*<Row>
+        <img
           width={320}
           alt="example" src={require("../../assets/images/cooperation_img_01.png")}
         />
       </Row>
       <Row>
-        <Image
+        <img
           width={320}
           alt="example" src={require("../../assets/images/cooperation_img_02.png")}
         />
-      </Row>
-      {/*<Row gutter={[12, 24]}>
-        <Col flex="auto">
+      </Row>*/}
+      <Row gutter={[12, 24]}>
+        <Col flex="auto" span={12}>
           <Card
             hoverable
-            style={{ width: 320 }}
+            // style={{ width: 320 }}
             cover={<img alt="example" src={require("../../assets/images/cooperation_img_01.png")} />}
           >
             <Meta description="2019年2月在马尼拉与向亚行银行首席经济学家泽田康幸教授汇报项目进展" />
           </Card>
         </Col>
-        <Col flex="auto">
+        <Col flex="auto" span={12}>
           <Card
             hoverable
-            style={{ width: 320 }}
+            // style={{ width: 320 }}
             cover={<img alt="example" src={require("../../assets/images/cooperation_img_02.png")} />}
           >
             <Meta description="2018年8月前往日内瓦与联合国训练研究所（UNITAR）讨论合作事宜" />
           </Card>
         </Col>
-      </Row>*/}
+      </Row>
     </PageHeaderWrapper>
   )
 };

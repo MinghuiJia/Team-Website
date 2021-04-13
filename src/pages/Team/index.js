@@ -123,7 +123,7 @@ const students = [
     year: 2017,
     degree: "硕士",
     img: "",
-    job: ""
+    job: "国際航業株式会社"
   },
   {
     name: "薛翔宇",
