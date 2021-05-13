@@ -45,24 +45,24 @@ export default defineConfig({
             {
               path: '/project',
               name: 'project',
-              icon: 'smile',
+              icon: 'project',
               component: './Project',
             },
             {
               path: '/research',
               name: 'research',
-              icon: 'smile',
+              icon: 'book',
               component: './Research',
             },
             {
               name: 'cooperation',
-              icon: 'table',
+              icon: 'star',
               path: '/cooperation',
               component: './Cooperation',
             },
             {
               name: 'news',
-              icon: 'table',
+              icon: 'read',
               path: '/news',
               component: './News',
             },
@@ -74,7 +74,7 @@ export default defineConfig({
             },
             {
               name: 'popular-science',
-              icon: 'team',
+              icon: 'tag',
               path: '/ps',
               component: './PopularScience',
             },

@@ -5,22 +5,10 @@
  */
 
 import { PageHeaderWrapper } from '@ant-design/pro-layout';
-import { Space, Typography, List } from 'antd';
+import { Typography, List, Row, Col, Card } from 'antd';
 import { connect } from 'dva';
 
-const { Text, Link, Paragraph } = Typography;
-
-const news = [
-  {
-    content: ''
-  },
-  {
-    content: ''
-  },
-  {
-    content: ''
-  }
-];
+const { Link, Paragraph } = Typography;
 
 const News = props => {
   const { _ } = props;
@@ -30,8 +18,7 @@ const News = props => {
       <List size="small" style={{ fontSize: 15 }}>
         <List.Item>
           <Paragraph>
-            2018年4月3日，由联合国、瑞典政府和瑞士政府共同主办的“也门人道主义响应行动高级别认捐会议”（2018 Yemen High-Level Pledging Event）在瑞士日内瓦举行。研究团队在夜光遥感领域的相关研究成果为该会议参与方提供咨询和服务。该事件被多家
-            <Link href="https://www.care.org/newsroom/press/press-releases/care-warns-three-years-escalation-conflict-yemeni-people-left-sick" target="_blank">国际组织</Link>和
+            2018年4月3日，由联合国、瑞典政府和瑞士政府共同主办的“也门人道主义响应行动高级别认捐会议”（2018 Yemen High-Level Pledging Event）在瑞士日内瓦举行。研究团队在夜光遥感领域的相关研究成果为该会议参与方提供咨询和服务。该事件被多家国际组织和
             <Link href="https://reliefweb.int/report/yemen/care-warns-three-years-escalation-conflict-yemeni-people-left-sick-starving-and-plunged" target="_blank">联合国媒体</Link>报道。
           </Paragraph>
         </List.Item>
@@ -39,6 +26,9 @@ const News = props => {
           <Paragraph>
             2017年12月18日，中央电视台新闻联播在“区域协调发展绘就新蓝图”专访李熙博士并报道了团队在中国区域协调发展的研究成果，观看请点击<Link href="http://tv.cctv.com/2017/12/18/VIDElz0nV5Sa2OK1wpZwroYm171218.shtml" target="_blank">央视官网</Link>，专访从59秒开始。
           </Paragraph>
+          <Card
+            cover={<img alt="个人照片" src={require("../../assets/person.png")} />}
+          />
         </List.Item>
         <List.Item>
           <Paragraph>
@@ -49,8 +39,14 @@ const News = props => {
             <Link href="http://www.lmars.whu.edu.cn/prof_web/lixi/media/LiXi-Video.mp4" target="_blank">截取视频</Link>。联合国安理会第7418次会议引用了该研究成果，请点击
             <Link href="http://webtv.un.org/watch/middle-east-security-council-7418th-meeting/4136656680001" target="_blank">联合国官网链接</Link>，引用部分从5分45秒开始。该研究成果的广泛传播对推动叙利亚和平进程起到积极作用。
           </Paragraph>
+          <Card
+            cover={<img alt="纽约时报报道" src={require("../../assets/new_york_times.jpg")} />}
+          />
         </List.Item>
       </List>
+      <Card
+        cover={<img alt="路透社报道" src={require("../../assets/news_report.png")} />}
+      />
     </PageHeaderWrapper>
   )
 };
