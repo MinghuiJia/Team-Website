@@ -39,14 +39,15 @@ const News = props => {
             <Link href="http://www.lmars.whu.edu.cn/prof_web/lixi/media/LiXi-Video.mp4" target="_blank">截取视频</Link>。联合国安理会第7418次会议引用了该研究成果，请点击
             <Link href="http://webtv.un.org/watch/middle-east-security-council-7418th-meeting/4136656680001" target="_blank">联合国官网链接</Link>，引用部分从5分45秒开始。该研究成果的广泛传播对推动叙利亚和平进程起到积极作用。
           </Paragraph>
-          <Card
-            cover={<img alt="纽约时报报道" src={require("../../assets/new_york_times.jpg")} />}
-          />
         </List.Item>
+        <Card
+          cover={<img alt="纽约时报报道" src={require("../../assets/new_york_times.jpg")} />}
+        />
+        <Card
+          cover={<img alt="路透社报道" src={require("../../assets/news_report.png")} />}
+        />
       </List>
-      <Card
-        cover={<img alt="路透社报道" src={require("../../assets/news_report.png")} />}
-      />
+
     </PageHeaderWrapper>
   )
 };

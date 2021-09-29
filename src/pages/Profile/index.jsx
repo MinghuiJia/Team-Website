@@ -47,7 +47,12 @@ export default () => (
       </Row>
       <Row>
         <li>
-          <FormattedMessage id="home.teacher.2015.10-"/>
+          <FormattedMessage id="home.teacher.2020.12-"/>
+        </li>
+      </Row>
+      <Row>
+        <li>
+          <FormattedMessage id="home.teacher.2015.10-2020.11"/>
         </li>
       </Row>
       <Row>
