@@ -14,6 +14,34 @@ const { Title, Text } = Typography;
 
 const students = [
   {
+    name: "李津津",
+    year: 2021,
+    degree: "博士",
+    img: "",
+    job: ""
+  },
+  {
+    name: "贾明晖",
+    year: 2021,
+    degree: "硕士",
+    img: "",
+    job: ""
+  },
+  {
+    name: "邵子轩",
+    year: 2021,
+    degree: "硕士",
+    img: "",
+    job: ""
+  },
+  {
+    name: "张雨禾",
+    year: 2021,
+    degree: "硕士",
+    img: "",
+    job: ""
+  },
+  {
     name: "陈宇伦",
     year: 2020,
     degree: "硕士",

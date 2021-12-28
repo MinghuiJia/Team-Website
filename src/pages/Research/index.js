@@ -59,7 +59,7 @@ const paper = [
   },
   {
     'author': [ "Zimin Yin", "Xi Li*", "Fei Tong", "Zhibiao Li", "Michael Jendryke" ],
-    'title': 'Tracing cultural festival patterns using time-series of VIIRS monthly products',
+    'title': 'Mapping urban expansion using night-time light images from Luojia1-01 and International Space Station',
     'journal': 'International Journal of Remote Sensing',
     'volume': '41',
     'number': '7',

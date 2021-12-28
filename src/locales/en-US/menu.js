@@ -3,5 +3,8 @@ export default {
   'menu.profile': 'Profile',
   'menu.research': 'Research',
   'menu.cooperation': 'Cooperation',
-  'menu.team': 'Team'
+  'menu.team': 'Team',
+  'menu.news': 'News',
+  'menu.project': 'Projects',
+  'menu.popular-science': 'Popular Science',
 };

@@ -14,6 +14,11 @@ const { Meta } = Card;
 
 const projectDataNow = [
   {
+    name: "国家高层次青年人才计划",
+    level: "",
+    depict: "2022.01-2024.12，160万，主持"
+  },
+  {
     name: "面向可持续发展目标进展评估的夜间灯光遥感关键技术及应用示范",
     level: "国家重点研发计划政府间国际科技创新合作项目",
     depict: "项目号：2019YFE0126800，2020.12-2023.11，448万，主持"
@@ -69,7 +74,7 @@ const Project = props => {
   return (
     <PageHeaderWrapper style={{ backgroundColor: "#fff" }}>
       <Row>
-        <Title level={4}>当前在研项目</Title>
+        <Title level={4}><FormattedMessage id="project.title"/></Title>
       </Row>
       <List
         size="large"
