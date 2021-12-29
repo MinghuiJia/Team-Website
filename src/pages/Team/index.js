@@ -88,7 +88,7 @@ const students = [
     year: 2019,
     degree: "硕士",
     img: "",
-    job: "腾讯"
+    job: "腾讯公司"
   },
   {
     name: "张雨欣",
@@ -116,7 +116,7 @@ const students = [
     year: 2018,
     degree: "硕士",
     img: "",
-    job: "高德"
+    job: "高德地图"
   },
   {
     name: "谢金龙",
@@ -130,14 +130,14 @@ const students = [
     year: 2018,
     degree: "硕士",
     img: "",
-    job: "天津测绘院"
+    job: "天津市测绘院"
   },
   {
     name: "张霖",
     year: 2018,
     degree: "硕士",
     img: "",
-    job: "读博"
+    job: "武汉大学读博"
   },
   {
     name: "刘姗姗",
