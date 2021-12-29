@@ -88,14 +88,14 @@ const students = [
     year: 2019,
     degree: "硕士",
     img: "",
-    job: ""
+    job: "腾讯"
   },
   {
     name: "张雨欣",
     year: 2019,
     degree: "硕士",
     img: "",
-    job: ""
+    job: "黑龙江地理信息测绘局"
   },
   {
     name: "尚小雨",
@@ -116,28 +116,28 @@ const students = [
     year: 2018,
     degree: "硕士",
     img: "",
-    job: ""
+    job: "高德"
   },
   {
     name: "谢金龙",
     year: 2018,
     degree: "硕士",
     img: "",
-    job: ""
+    job: "长光卫星技术有限公司"
   },
   {
     name: "赵文博",
     year: 2018,
     degree: "硕士",
     img: "",
-    job: ""
+    job: "天津测绘院"
   },
   {
     name: "张霖",
     year: 2018,
     degree: "硕士",
     img: "",
-    job: ""
+    job: "读博"
   },
   {
     name: "刘姗姗",
@@ -224,7 +224,7 @@ const columns = [
     key: 'year',
   },
   {
-    title: '备注',
+    title: '毕业去向',
     key: 'job',
     dataIndex: 'job',
     render: tags => <Tag color={"geekblue"} key={tags}>{tags}</Tag>,

@@ -52,22 +52,37 @@ const SelectLang = props => {
   const selectedLang = getLocale();
 
   const locales = {
-    'zh-CN': 'en-US',
-    'en-US': 'zh-CN'
+    'zh-CN': 'zh-CN',
+    'en-US': 'en-US',
   };
+
   const languageLabels = {
-    'zh-CN': '中文 / English',
-    'en-US': 'English / 中文',
+    'zh-CN': '中文',
+    'en-US': 'English',
   };
-  const changeLang = () => {
-    const lang = locales[selectedLang];
-    console.log(lang);
-    setLocale(lang);
+
+  const setCN = () => {
+    setLocale('zh-CN');
+  }
+
+  const setEN = () => {
+    setLocale('en-US');
   }
 
   return (
-    <Button style={{ marginTop: 15, marginRight: 20 }} onClick={changeLang} value={locales[selectedLang]}>{languageLabels[selectedLang]}</Button>
-  );
+    <>
+      <Button style={{ marginTop: 15, marginRight: 20 }}
+              onClick={setCN}
+              value={locales["zh-CN"]}>
+        {languageLabels["zh-CN"]}
+      </Button>
+      <Button style={{ marginTop: 15, marginRight: 20 }}
+              onClick={setEN}
+              value={locales["en-US"]}>
+        {languageLabels["en-US"]}
+      </Button>
+    </>
+    );
 };
 
 export default SelectLang;

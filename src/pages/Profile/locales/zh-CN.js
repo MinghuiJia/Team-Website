@@ -3,7 +3,7 @@ export default {
   'home.subtitle': '欢迎各位同学报考研究生，并欢迎本科生加入我们的科研团队！',
   'home.teacher.name': '李熙',
   'home.teacher.address': '湖北省武汉市珞瑜路 129 号测绘遥感信息工程国家重点实验室',
-  'home.teacher.description1': '教授，博士生导师，国家高层次青年人才计划入选者（2021年），亚洲开发银行国际顾问，International Journal of Remote Sensing编委。发表学术论文30余篇，其中第一/通信作者SCI论文20余篇，是Science Advances、Remote Sensing of Environment、Journal of Development Economics等30多种国际期刊的审稿人。主持国家自然科学基金、国家重点研发计划等多个国家和省部级项目。特别在夜光遥感方法和应用上开展了深入研究，研究成果被CNN、BBC、CCTV、《纽约时报》、美联社、路透社等600余家国际媒体以及联合国安理会引用。',
+  'home.teacher.description1': '教授，博士生导师，国家高层次青年人才计划入选者（2021年），亚洲开发银行国际顾问，International Journal of Remote Sensing编委。发表学术论文30余篇，其中第一/通信作者SCI论文20余篇，是Science Advances、Nature Energy、Remote Sensing of Environment、Journal of Development Economics等30多种国际期刊的审稿人。主持国家自然科学基金、国家重点研发计划等多个国家和省部级项目。特别在夜光遥感方法和应用上开展了深入研究，研究成果被CNN、BBC、CCTV、《纽约时报》、美联社、路透社等600余家国际媒体以及联合国安理会引用。',
   'home.teacher.resume': '个人简历',
   'home.teacher.2020.12-': '2020.12 至今 武汉大学测绘遥感信息工程国家重点实验室 教授',
   'home.teacher.2015.10-2020.11': '2015.10 - 2020.11 武汉大学测绘遥感信息工程国家重点实验室 副教授',

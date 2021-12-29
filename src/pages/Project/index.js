@@ -14,7 +14,7 @@ const { Meta } = Card;
 
 const projectDataNow = [
   {
-    name: "国家高层次青年人才计划",
+    name: "国家高层次青年人才计划项目",
     level: "",
     depict: "2022.01-2024.12，160万，主持"
   },
