@@ -5,15 +5,30 @@
  */
 
 import { PageHeaderWrapper } from '@ant-design/pro-layout';
-import { Card, Typography, Row, Col, Avatar, List, Tag, } from 'antd';
+import { Typography, Row, List, } from 'antd';
 import { connect } from 'dva';
 import {FormattedMessage} from "umi";
 import React from "react";
 
-const { Title, Paragraph, Text } = Typography;
-const { Meta } = Card;
+const { Title, Text } = Typography;
 
 const paper = [
+  {
+    'author': [
+      'Li Xi-Ya', 'Li Xi', 'Fan Ziying', 'Mi Li', 'Kandakji Tarek',
+      'Song Zhen', 'Li Deren', 'Song Xiao-Peng'
+    ],
+    'title': 'Civil war hinders crop production and threatens food security in Syria',
+    'journal': 'Nature Food',
+    'volume': 'Li2022',
+    'number': '',
+    'pages': '2662-1355',
+    'year': '2022',
+    'publisher': '',
+    'doi': '10.1038/s43016-021-00432-4',
+    'url': 'https://doi.org/10.1038/s43016-021-00432-4',
+    'abstract': 'Assessing the impact of violent conflict on Syrian agriculture is challenging given data limitations and attributability issues. Using satellite data at 30 m spatial resolution, we found that the extent of productive cropland showed greater interannual variability and spatial heterogeneity after the start of the civil war in 2011. Using changes in satellite-based night-time light as a proxy for war impact intensity, we also found that cropland close to severely impacted urban settlements faced greater disruption. Fixed-effects models revealed the relationship between productive cropland and precipitation for the pre-war period, whereas a counterfactual scenario constructed for the period 2012–2019 showed substantial variation at the regional level. While the ongoing conflict promoted cropland cultivation in safer zones, cropland reduction took place in the country’s northwest and southeast regions. Our study demonstrated the combined utility of daytime and night-time satellite data to assess food insecurity in extreme environments and can help guide distribution of food and aid in Syria.'
+  },
   {
     'author': [ 'Levin Noam', 'Kyba Christopher C.M.', 'Zhang Qingling',
       'Sánchez de Miguel Alejandro', 'Román Miguel O.', 'Xi Li',
@@ -412,28 +427,20 @@ const paper = [
   },
 ];
 
-const Research = props => {
+const AuthorList = (list) => {
+  const tagList = []
+  list.forEach((item) => {
+    if (item === 'Xi Li' || item === 'Li Xi' || item === '李熙' || item === 'Xi Li*' || item === 'Li Xi*') {
+      tagList.push(<Text strong>{item + ", "}</Text>)
+    } else {
+      tagList.push(item + ", ");
+    }
+  })
+  return <>{tagList}</>
+}
+
+export const Research = props => {
   const { _ } = props;
-
-  const Author = (list) => {
-    const tagList = []
-    list.forEach((item) => {
-      tagList.push(<Tag color={item === 'Xi Li' ||  item === '李熙' ? 'blue' : ''} key={item}>{item}</Tag>);
-    })
-    return <>{tagList}</>
-  }
-
-  const AuthorList = (list) => {
-    const tagList = []
-    list.forEach((item) => {
-      if (item === 'Xi Li' || item === 'Li Xi' || item === '李熙' || item === 'Xi Li*' || item === 'Li Xi*') {
-        tagList.push(<Text strong>{item + ", "}</Text>)
-      } else {
-        tagList.push(item + ", ");
-      }
-    })
-    return <>{tagList}</>
-  }
 
   return (
     <PageHeaderWrapper
