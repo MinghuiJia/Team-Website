@@ -15,8 +15,8 @@ const { Title, Text } = Typography;
 const paper = [
   {
     'author': [
-      'Li Xi-Ya', 'Li Xi', 'Fan Ziying', 'Mi Li', 'Kandakji Tarek',
-      'Song Zhen', 'Li Deren', 'Song Xiao-Peng'
+      'Li Xi-Ya', 'Li Xi*', 'Fan Ziying', 'Mi Li', 'Kandakji Tarek',
+      'Song Zhen', 'Li Deren', 'Song Xiao-Peng*'
     ],
     'title': 'Civil war hinders crop production and threatens food security in Syria',
     'journal': 'Nature Food',
