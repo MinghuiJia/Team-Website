@@ -18,6 +18,20 @@ const News = props => {
       <List size="small" style={{ fontSize: 15 }}>
         <List.Item>
           <Paragraph>
+            <Link href="https://baijiahao.baidu.com/s?id=1722746888330081543&wfr=spider&for=pc" target="_blank">战争会给一个国家的耕地带来怎样影响？不用去战区调查，用遥感卫星就能“看”得一清二楚。</Link>
+            2022年01月23日，武汉大学测绘遥感信息工程国家重点实验室李熙团队，在《自然-食品》杂志在线发表的一项研究成果显示，20多年间战争给叙利亚带来了巨大的粮食危机。此前，李熙团队还利用夜光遥感信息，研究得出“四年内战使叙利亚灯光减少了83%”的结论，直接展示了叙利亚内战的惨烈程度，这一成果被600余家国内外媒体转载，还被联合国安理会引用。
+          </Paragraph>
+          <Card
+            cover={<img alt="新闻照片" src={require("../../assets/news/nature_food.jpg")} />}
+          />
+        </List.Item>
+        <List.Item>
+          <Paragraph>
+            <Link href="https://mp.weixin.qq.com/s?__biz=MzI5NTA2MDE3MA==&mid=2649996652&idx=1&sn=88eb89134aa9ec7019a5d6c350c4aca0&chksm=f45e4ac9c329c3df5ee82d57209b50dc12cc33b3e9c343ffb44e50677df3045ae1b7f6838ee3&mpshare=1&scene=23&srcid=0114LoE5AXm8GvPOzd9yukSp&sharer_sharetim" target="_blank">2022年01月14日，我室李熙团队联合多名国内外学者在国际学术期刊《自然.食品》发表题为“叙利亚内战阻碍粮食生产并威胁了粮食安全”的论文。</Link>该论文利用Landsat、夜间灯光等多源遥感数据评估了叙利亚战争对耕地面积和粮食安全的影响。论文第一署名单位为武汉大学测绘遥感信息工程国家重点实验室，第一作者为我室2018级硕士李西亚（导师为李熙），通讯作者为我室李熙教授和德克萨斯理工大学宋晓鹏助理教授，我室李德仁院士也是论文作者之一。
+          </Paragraph>
+        </List.Item>
+        <List.Item>
+          <Paragraph>
             2018年4月3日，由联合国、瑞典政府和瑞士政府共同主办的“也门人道主义响应行动高级别认捐会议”（2018 Yemen High-Level Pledging Event）在瑞士日内瓦举行。研究团队在夜光遥感领域的相关研究成果为该会议参与方提供咨询和服务。该事件被多家国际组织和
             <Link href="https://reliefweb.int/report/yemen/care-warns-three-years-escalation-conflict-yemeni-people-left-sick-starving-and-plunged" target="_blank">联合国媒体</Link>报道。
           </Paragraph>
@@ -27,7 +41,7 @@ const News = props => {
             2017年12月18日，中央电视台新闻联播在“区域协调发展绘就新蓝图”专访李熙博士并报道了团队在中国区域协调发展的研究成果，观看请点击<Link href="http://tv.cctv.com/2017/12/18/VIDElz0nV5Sa2OK1wpZwroYm171218.shtml" target="_blank">央视官网</Link>，专访从59秒开始。
           </Paragraph>
           <Card
-            cover={<img alt="个人照片" src={require("../../assets/person.png")} />}
+            cover={<img alt="个人照片" src={require("../../assets/news/person.png")} />}
           />
         </List.Item>
         <List.Item>
@@ -41,10 +55,10 @@ const News = props => {
           </Paragraph>
         </List.Item>
         <Card
-          cover={<img alt="纽约时报报道" src={require("../../assets/new_york_times.jpg")} />}
+          cover={<img alt="纽约时报报道" src={require("../../assets/news/new_york_times.jpg")} />}
         />
         <Card
-          cover={<img alt="路透社报道" src={require("../../assets/news_report.png")} />}
+          cover={<img alt="路透社报道" src={require("../../assets/news/news_report.png")} />}
         />
       </List>
 
