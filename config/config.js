@@ -106,4 +106,5 @@ export default defineConfig({
     basePath: '/',
     publicPath: '/public/'
   },
+  outputPath: "./website/dist"
 });

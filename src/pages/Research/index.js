@@ -5,80 +5,34 @@
  */
 
 import { PageHeaderWrapper } from '@ant-design/pro-layout';
-import { Typography, Row, List, } from 'antd';
+import {Typography, Row, List, Table, Tag,} from 'antd';
 import { connect } from 'dva';
 import {FormattedMessage} from "umi";
 import React from "react";
 
 const { Title, Text } = Typography;
-const representativePaper = [
-  {
-    'author': [
-      'Li Xi-Ya', 'Li Xi*', 'Fan Ziying', 'Mi Li', 'Kandakji Tarek',
-      'Song Zhen', 'Li Deren', 'Song Xiao-Peng*'
-    ],
-    'title': 'Civil war hinders crop production and threatens food security in Syria',
-    'journal': 'Nature Food',
-    'volume': 'Li2022',
-    'number': '',
-    'pages': '2662-1355',
-    'year': '2022',
-    'publisher': '',
-    'doi': '10.1038/s43016-021-00432-4',
-    'url': '../../assets/papers/s43016-021-00432-4.pdf',
-    'abstract': 'Assessing the impact of violent conflict on Syrian agriculture is challenging given data limitations and attributability issues. Using satellite data at 30 m spatial resolution, we found that the extent of productive cropland showed greater interannual variability and spatial heterogeneity after the start of the civil war in 2011. Using changes in satellite-based night-time light as a proxy for war impact intensity, we also found that cropland close to severely impacted urban settlements faced greater disruption. Fixed-effects models revealed the relationship between productive cropland and precipitation for the pre-war period, whereas a counterfactual scenario constructed for the period 2012–2019 showed substantial variation at the regional level. While the ongoing conflict promoted cropland cultivation in safer zones, cropland reduction took place in the country’s northwest and southeast regions. Our study demonstrated the combined utility of daytime and night-time satellite data to assess food insecurity in extreme environments and can help guide distribution of food and aid in Syria.'
-  },
-  {
-    'author': [ 'Levin Noam', 'Kyba Christopher C.M.', 'Zhang Qingling',
-      'Sánchez de Miguel Alejandro', 'Román Miguel O.', 'Xi Li',
-      'Portnov Boris A.', 'Molthan Andrew L.', 'Jechow Andreas',
-      'Miller Steven D.', 'Wang Zhuosen', 'Shrestha Ranjay M.', 'Elvidge Christopher D.',
-    ],
-    'title': 'Remote sensing of night lights: A review and an outlook for the future.',
-    'journal': 'Remote Sensing of Environment',
-    'volume': '237',
-    'number': '',
-    'pages': '111443',
-    'year': '2020',
-    'publisher': '',
-    'doi': '10.1016/j.rse.2019.111443',
-    'url': 'https://doi.org/10.1016/j.rse.2019.111443',
-    'abstract': 'Remote sensing of night light emissions in the visible band offers a unique opportunity to directly observe human activity from space. This has allowed a host of applications including mapping urban areas, estimating population and GDP, monitoring disasters and conflicts. More recently, remotely sensed night lights data have found use in understanding the environmental impacts of light emissions (light pollution), including their impacts on human health. In this review, we outline the historical development of night-time optical sensors up to the current state of the art sensors, highlight various applications of night light data, discuss the special challenges associated with remote sensing of night lights with a focus on the limitations of current sensors, and provide an outlook for the future of remote sensing of night lights. While the paper mainly focuses on space borne remote sensing, ground based sensing of night-time brightness for studies on astronomical and ecological light pollution, as well as for calibration and validation of space borne data, are also discussed. Although the development of night light sensors lags behind day-time sensors, we demonstrate that the field is in a stage of rapid development. The worldwide transition to LED lights poses a particular challenge for remote sensing of night lights, and strongly highlights the need for a new generation of space borne night lights instruments. This work shows that future sensors are needed to monitor temporal changes during the night (for example from a geostationary platform or constellation of satellites), and to better understand the angular patterns of light emission (roughly analogous to the BRDF in daylight sensing). Perhaps most importantly, we make the case that higher spatial resolution and multispectral sensors covering the range from blue to NIR are needed to more effectively identify lighting technologies, map urban functions, and monitor energy use.'
-  },
-  {
-    'author': [ "Xi Li", "Noam Levin", "Jinlong Xie", "Deren Li" ],
-    'title': 'Monitoring hourly night-time light by an unmanned aerial vehicle and its implications to satellite remote sensing',
-    'journal': 'Remote Sensing of Environment',
-    'volume': '247',
-    'number': '',
-    'pages': '111942',
-    'year': '2020',
-    'publisher': 'Taylor & Francis',
-    'doi': '10.1016/j.rse.2020.111942',
-    'url': 'https://doi.org/10.1016/j.rse.2020.111942',
-    'abstract': 'Satellite-observed night-time light in urban areas has been widely used as an indicator for socioeconomic development and light pollution. Up to present, the diurnal dynamics of city light during the night, which are important to understand the nature of human activity and the underlying variables explaining night-time brightness, have hardly been investigated by remote sensing techniques due to limitation of the revisit time and spatial resolution of available satellites. In this study, we employed a consumer-grade unmanned aerial vehicle (UAV) to monitor city light in a study area located in Wuhan City, China, from 8:08 PM, April 15, 2019 to 5:08 AM, April 16, 2019, with an hourly temporal resolution. By using three ground-based Sky Quality Meters (SQMs), we found that the UAV-recorded light brightness was consistent with the ground luminous intensity measured by the SQMs in both the spatial (R2 = 0.72) and temporal dimensions (R2 > 0.94), and that the average city light brightness was consistent with the sky brightness in the temporal dimension (R2 = 0.98), indicating that UAV images can reliably monitor the city\'s night-time brightness. The temporal analysis showed that different locations had different patterns of temporal changes in their night-time brightness, implying that inter-calibration of two kinds of satellite images with different overpass times would be a challenge. Combining an urban function map of 18 classes and the hourly UAV images, we found that urban functions differed in their temporal light dynamics. For example, the outdoor sports field lost 97.28% of its measured brightness between 8: 08 PM – 4:05 AM, while an administrative building only lost 4.56%, and the entire study area lost 61.86% of its total brightness. Within our study area, the period between 9:06 PM and 10:05 PM was the period with largest amount of light loss. The spectral analysis we conducted showed that city light colors were different in some urban functions, with the major road being the reddest region at 8:08 PM and becoming even redder at 4:05 AM. This preliminary study indicates that UAVs are a good tool to investigate city light at night, and that city light is very complex in both of the temporal and spatial dimensions, requiring comprehensive investigation using more advanced UAV techniques, and emphasizing the need for geostationary platforms for night-time light sensors.'
-  },
-  {
-    'author': [ "Xi Li", "Ruiqi Ma", "Qingling Zhang", "Deren Li", "Shanshan Liu", "Tao He", "Lixian Zhao" ],
-    'title': 'Anisotropic characteristic of artificial light at night – Systematic investigation with VIIRS DNB multi-temporal observations',
-    'journal': 'Remote Sensing of Environment',
-    'volume': '233',
-    'number': '',
-    'pages': '111357',
-    'year': '2019',
-    'publisher': 'Taylor & Francis',
-    'doi': '10.1016/j.rse.2019.111357',
-    'url': 'https://doi.org/10.1016/j.rse.2019.111357',
-    'abstract': 'The released VIIRS DNB nightly images, also known as VIIRS DNB daily nighttime images, provide rich information for time series analysis of global socioeconomic dynamics. Anisotropic characteristic is a possible factor that influences the VIIRS DNB radiance at night and its time series analysis. This study aims to investigate the relationship between viewing angles and VIIRS DNB radiance of Suomi NPP satellite in urban areas. First, twenty-nine points were selected globally to explore the angle variation of Suomi NPP satellite views at night. We found that the variation of the satellite viewing zenith angle (VZA) is consistent (e.g. between 0° and 70°) since the range of VZA is fixed depending on the sensor design, and the range of viewing azimuth angle (VAA) increases with the increase of latitude. Second, thirty points in cities of Beijing, Houston, Los Angeles, Moscow, Quito and Sydney, were used to investigate the angle-radiance relationship. We proposed a zenith-radiance quadratic (ZRQ) model and a zenith-azimuth-radiance binary quadratic (ZARBQ) model to quantify the relationship between satellite viewing angles and artificial light radiance, which has been corrected by removing the moonlight and atmospheric impact from VIIRS DNB radiance products. For all the thirty points, the ZRQ and ZARBQ analysis have averaged R2 of 0.50 and 0.53, respectively, which indicates that the viewing angles are important factors influencing the variation of the artificial light radiance, but extending zenith to zenith-azimuth does not much better explain the variation of the observed artificial light. Importantly, based on the data analysis, we can make the hypothesis that building height may affect the relationship between VZA and artificial light, and cold and hot spot effects are clearly found in tall building areas. These findings are potentially useful to reconstruct more stable time series VIIRS DNB images for socioeconomic applications by removing the angular effects.'
-  },
-];
 
 const paper = [
   {
+    'author': ['Xi Li', 'Xiaoyu Shang', 'Qingling Zhang', 'Deren Li', 'Fengrui Chen', 'Minghui Jia', 'Yan Wang'],
+    'isTop': true,
+    'title': 'Using radiant intensity to characterize the anisotropy of satellite-derived city light at night',
+    'journal': 'Remote Sensing of Environment',
+    'volume': '271',
+    'number': '',
+    'pages': '112920',
+    'year': '2022',
+    'publisher': '',
+    'doi': '10.1016/j.rse.2022.112920',
+    'url': 'https://doi.org/10.1016/j.rse.2022.112920',
+    'abstract': ''
+  },
+  {
     'author': [
       'Li Xi-Ya', 'Li Xi*', 'Fan Ziying', 'Mi Li', 'Kandakji Tarek',
       'Song Zhen', 'Li Deren', 'Song Xiao-Peng*'
     ],
+    'isTop': true,
     'title': 'Civil war hinders crop production and threatens food security in Syria',
     'journal': 'Nature Food',
     'volume': 'Li2022',
@@ -91,11 +45,64 @@ const paper = [
     'abstract': 'Assessing the impact of violent conflict on Syrian agriculture is challenging given data limitations and attributability issues. Using satellite data at 30 m spatial resolution, we found that the extent of productive cropland showed greater interannual variability and spatial heterogeneity after the start of the civil war in 2011. Using changes in satellite-based night-time light as a proxy for war impact intensity, we also found that cropland close to severely impacted urban settlements faced greater disruption. Fixed-effects models revealed the relationship between productive cropland and precipitation for the pre-war period, whereas a counterfactual scenario constructed for the period 2012–2019 showed substantial variation at the regional level. While the ongoing conflict promoted cropland cultivation in safer zones, cropland reduction took place in the country’s northwest and southeast regions. Our study demonstrated the combined utility of daytime and night-time satellite data to assess food insecurity in extreme environments and can help guide distribution of food and aid in Syria.'
   },
   {
+    'author': ['Zhe Tong', 'Xi Li*', 'Hanrui Cao'],
+    'title': 'Comparing DMSP/OLS Stable Nighttime Light With Radiance Calibrated Nighttime Light',
+    'journal': 'IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing',
+    'volume': '14',
+    'number': '',
+    'pages': '11116-11125',
+    'year': '2021',
+    'publisher': '',
+    'doi': '10.1109/JSTARS.2021.3123065',
+    'url': 'https://doi.org/10.1109/JSTARS.2021.3123065',
+    'abstract': ''
+  },
+  {
+    'author': ['Kangbo Dong', 'Xi Li*', 'Hanrui Cao', 'Zhe Tong'],
+    'title': 'Intercalibration Between Night-Time DMSP/OLS Radiance Calibrated Images and NPP/VIIRS Images Using Stable Pixels',
+    'journal': 'IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing',
+    'volume': '14',
+    'number': '',
+    'pages': '8838-8848',
+    'year': '2021',
+    'publisher': '',
+    'doi': '10.1109/JSTARS.2021.3109072',
+    'url': 'https://doi.org/10.1109/JSTARS.2021.3109072',
+    'abstract': ''
+  },
+  {
+    'author': ['Hanrui Cao', 'Xi Li*', 'Zhe Tong'],
+    'title': 'Impact of Image Saturation on Radiometric Intercalibration of DMSP/OLS Nighttime Light Images',
+    'journal': 'IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing',
+    'volume': '14',
+    'number': '',
+    'pages': '7948-7960',
+    'year': '2021',
+    'publisher': '',
+    'doi': '10.1109/JSTARS.2021.3101837',
+    'url': 'https://doi.org/10.1109/JSTARS.2021.3101837',
+    'abstract': ''
+  },
+  {
+    'author': ['Ji Wu', 'Zhi Zhang', 'Xiao Yang', 'Xi Li*'],
+    'title': 'Analyzing Pixel-Level Relationships between Luojia 1-01 Nighttime Light and Urban Surface Features by Separating the Pixel Blooming Effect',
+    'journal': 'Remote Sensing',
+    'volume': '13',
+    'number': '23',
+    'pages': '4838',
+    'year': '2021',
+    'publisher': '',
+    'doi': '10.1109/JSTARS.2021.3101837',
+    'url': 'https://doi.org/10.1109/JSTARS.2021.3101837',
+    'abstract': ''
+  },
+  {
     'author': [ 'Levin Noam', 'Kyba Christopher C.M.', 'Zhang Qingling',
       'Sánchez de Miguel Alejandro', 'Román Miguel O.', 'Xi Li',
       'Portnov Boris A.', 'Molthan Andrew L.', 'Jechow Andreas',
       'Miller Steven D.', 'Wang Zhuosen', 'Shrestha Ranjay M.', 'Elvidge Christopher D.',
     ],
+    'isTop': true,
     'title': 'Remote sensing of night lights: A review and an outlook for the future.',
     'journal': 'Remote Sensing of Environment',
     'volume': '237',
@@ -148,6 +155,7 @@ const paper = [
   },
   {
     'author': [ "Xi Li", "Noam Levin", "Jinlong Xie", "Deren Li" ],
+    'isTop': true,
     'title': 'Monitoring hourly night-time light by an unmanned aerial vehicle and its implications to satellite remote sensing',
     'journal': 'Remote Sensing of Environment',
     'volume': '247',
@@ -174,6 +182,7 @@ const paper = [
   },
   {
     'author': [ "Xi Li", "Ruiqi Ma", "Qingling Zhang", "Deren Li", "Shanshan Liu", "Tao He", "Lixian Zhao" ],
+    'isTop': true,
     'title': 'Anisotropic characteristic of artificial light at night – Systematic investigation with VIIRS DNB multi-temporal observations',
     'journal': 'Remote Sensing of Environment',
     'volume': '233',
@@ -488,6 +497,96 @@ const paper = [
   },
 ];
 
+const Factor = () => {
+  const columns = [
+    {
+      title: '',
+      dataIndex: 'title',
+      key: 'factor.title',
+      width: 200,
+      render: text => <FormattedMessage id={text}/>,
+    },
+    {
+      title: text => <FormattedMessage id="research.factor.title"/>,
+      dataIndex: 'number',
+      key: 'factor.number',
+      width: 200,
+      render: text => <a>{text}</a>,
+    }
+  ];
+
+  const factor = [
+    {'title': 'cite', 'number': 1817},
+    {'title': 'h index', 'number': 19},
+    {'title': 'i10 index', 'number': 26}
+  ];
+
+  const citation = [
+    {'year': 2015, 'number': 69},
+    {'year': 2016, 'number': 70},
+    {'year': 2017, 'number': 152},
+    {'year': 2018, 'number': 170},
+    {'year': 2019, 'number': 315},
+    {'year': 2020, 'number': 430},
+    {'year': 2021, 'number': 528},
+  ];
+
+  const googleScholarUrl = 'https://scholar.google.com/citations?hl=zh-CN&user=eWiOELoAAAAJ'
+
+  return (
+    <>
+      <Row style={{marginTop: 20}}>
+        <Title level={4}><FormattedMessage id="research.factor.title"/></Title>
+      </Row>
+      <Table pagination={false}
+             columns={columns}
+             footer={
+               () =>
+                 <b>
+                   <FormattedMessage id="factor.table.footer"/>
+                   <a style={{fontSize: 10, marginLeft: 10}} href={googleScholarUrl} target="_blank">
+                     <FormattedMessage id="factor.table.detail"/>
+                   </a>
+                 </b>
+             }
+             dataSource={factor}/>
+    </>
+  )
+}
+
+const RepresentativePaper = () => {
+  return <>
+    <Row style={{ marginTop: 20 }}>
+      <Title level={4}><FormattedMessage id="research.rep-paper.title"/></Title>
+    </Row>
+    <List
+      itemLayout="vertical"
+      dataSource={paper}
+      size="small"
+      renderItem={item => {
+        if (item.isTop) {
+          return (
+            <List.Item
+              key={item.title}
+            >
+              <List.Item.Meta
+                title={
+                  <a href={item.url} download style={{fontSize: 14}} target="_blank">
+                    {
+                      AuthorList(item.author)
+                    }{item.year + ". " + item.title + ", " + item.journal + ", " + item.volume + (item.number === "" ? (item.number) : ("(" + item.number + ")")) + ", " + item.pages}
+                  </a>
+                }
+              />
+            </List.Item>
+          )
+        }
+      }
+      }
+    />
+  </>
+}
+
 const AuthorList = (list) => {
   const tagList = []
   list.forEach((item) => {
@@ -503,29 +602,8 @@ const AuthorList = (list) => {
 export const Paper = () => {
   return (
     <>
-      <Row style={{ marginTop: 20 }}>
-        <Title level={4}><FormattedMessage id="research.rep-paper.title"/></Title>
-      </Row>
-      <List
-        itemLayout="vertical"
-        dataSource={representativePaper}
-        size="small"
-        renderItem={item => (
-          <List.Item
-            key={item.title}
-          >
-            <List.Item.Meta
-              title={
-                <a href={item.url} download style={{fontSize: 14}} target="_blank">
-                  {
-                    AuthorList(item.author)
-                  }{item.year + ". " + item.title + ", " + item.journal + ", " + item.volume + (item.number === "" ? (item.number) :  ("(" +  item.number + ")")) + ", " + item.pages}
-                </a>
-              }
-            />
-          </List.Item>
-        )}
-      />
+      <Factor/>
+      <RepresentativePaper/>
       <Row style={{ marginTop: 20 }}>
         <Title level={4}><FormattedMessage id="research.paper.title"/></Title>
       </Row>
@@ -535,7 +613,7 @@ export const Paper = () => {
         size="small"
         footer={
           <div>
-            <b>仅统计到 2021 年 12 月</b>
+            <b><FormattedMessage id="paper.list.footer"/></b>
           </div>
         }
         renderItem={item => (
@@ -557,8 +635,6 @@ export const Paper = () => {
     </>
   )
 }
-
-// export const
 
 const Research = props => {
   const { _ } = props;
