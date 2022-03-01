@@ -92,8 +92,8 @@ const paper = [
     'pages': '4838',
     'year': '2021',
     'publisher': '',
-    'doi': '10.1109/JSTARS.2021.3101837',
-    'url': 'https://doi.org/10.1109/JSTARS.2021.3101837',
+    'doi': '10.3390/rs13234838',
+    'url': 'https://doi.org/10.3390/rs13234838',
     'abstract': ''
   },
   {

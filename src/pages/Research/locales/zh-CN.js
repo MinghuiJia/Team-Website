@@ -2,7 +2,7 @@ export default {
   'research.factor.title': '引用次数',
   'research.paper.title': '近年来的主要论文',
   'research.rep-paper.title': '近年来的代表性论文',
-  'paper.list.footer': '仅统计到 2021 年 12 月',
+  'paper.list.footer': '仅统计到 2021 年 12 月 31 日',
   'cite': '引用次数',
   'number': '数量',
   'h index': 'h指数',
