@@ -8,5 +8,7 @@ export default {
   'h index': 'h index',
   'i10 index': 'i10 index',
   'factor.table.footer': 'Data from google scholar，Statistics as of 02/22/2022',
-  'factor.table.detail': 'See the latest'
+  'factor.table.detail': 'See the latest',
+  'research.patent.title': 'Patents',
+  'research.honor.title': 'Honors'
 };

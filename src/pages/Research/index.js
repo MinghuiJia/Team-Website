@@ -5,14 +5,14 @@
  */
 
 import { PageHeaderWrapper } from '@ant-design/pro-layout';
-import {Typography, Row, List, Table, Tag,} from 'antd';
+import { Typography, Row, List, Table } from 'antd';
 import { connect } from 'dva';
-import {FormattedMessage} from "umi";
+import { FormattedMessage } from "umi";
 import React from "react";
 
 const { Title, Text } = Typography;
 
-const paper = [
+const index = [
   {
     'author': ['Xi Li', 'Xiaoyu Shang', 'Qingling Zhang', 'Deren Li', 'Fengrui Chen', 'Minghui Jia', 'Yan Wang'],
     'isTop': true,
@@ -112,7 +112,7 @@ const paper = [
     'publisher': '',
     'doi': '10.1016/j.rse.2019.111443',
     'url': 'https://doi.org/10.1016/j.rse.2019.111443',
-    'abstract': 'Remote sensing of night light emissions in the visible band offers a unique opportunity to directly observe human activity from space. This has allowed a host of applications including mapping urban areas, estimating population and GDP, monitoring disasters and conflicts. More recently, remotely sensed night lights data have found use in understanding the environmental impacts of light emissions (light pollution), including their impacts on human health. In this review, we outline the historical development of night-time optical sensors up to the current state of the art sensors, highlight various applications of night light data, discuss the special challenges associated with remote sensing of night lights with a focus on the limitations of current sensors, and provide an outlook for the future of remote sensing of night lights. While the paper mainly focuses on space borne remote sensing, ground based sensing of night-time brightness for studies on astronomical and ecological light pollution, as well as for calibration and validation of space borne data, are also discussed. Although the development of night light sensors lags behind day-time sensors, we demonstrate that the field is in a stage of rapid development. The worldwide transition to LED lights poses a particular challenge for remote sensing of night lights, and strongly highlights the need for a new generation of space borne night lights instruments. This work shows that future sensors are needed to monitor temporal changes during the night (for example from a geostationary platform or constellation of satellites), and to better understand the angular patterns of light emission (roughly analogous to the BRDF in daylight sensing). Perhaps most importantly, we make the case that higher spatial resolution and multispectral sensors covering the range from blue to NIR are needed to more effectively identify lighting technologies, map urban functions, and monitor energy use.'
+    'abstract': 'Remote sensing of night light emissions in the visible band offers a unique opportunity to directly observe human activity from space. This has allowed a host of applications including mapping urban areas, estimating population and GDP, monitoring disasters and conflicts. More recently, remotely sensed night lights data have found use in understanding the environmental impacts of light emissions (light pollution), including their impacts on human health. In this review, we outline the historical development of night-time optical sensors up to the current state of the art sensors, highlight various applications of night light data, discuss the special challenges associated with remote sensing of night lights with a focus on the limitations of current sensors, and provide an outlook for the future of remote sensing of night lights. While the index mainly focuses on space borne remote sensing, ground based sensing of night-time brightness for studies on astronomical and ecological light pollution, as well as for calibration and validation of space borne data, are also discussed. Although the development of night light sensors lags behind day-time sensors, we demonstrate that the field is in a stage of rapid development. The worldwide transition to LED lights poses a particular challenge for remote sensing of night lights, and strongly highlights the need for a new generation of space borne night lights instruments. This work shows that future sensors are needed to monitor temporal changes during the night (for example from a geostationary platform or constellation of satellites), and to better understand the angular patterns of light emission (roughly analogous to the BRDF in daylight sensing). Perhaps most importantly, we make the case that higher spatial resolution and multispectral sensors covering the range from blue to NIR are needed to more effectively identify lighting technologies, map urban functions, and monitor energy use.'
   },
   {
     'author': [ "Xia Zhao", "Xi Li*", "Yuyu Zhou*", "Deren Li" ],
@@ -151,7 +151,7 @@ const paper = [
     'publisher': 'Taylor & Francis',
     'doi': '10.1080/01431161.2019.1693661',
     'url': 'https://doi.org/10.1080/01431161.2019.1693661',
-    'abstract': 'Night-time light (NTL) images have been proved as a type of reliable data source to map urban expansion. In this paper, to investigate the potential of using multi-source NTL images at near 100 m resolution to detect urban expansion, we use a Luojia1-01 (LJ1-01) image in 2018 and an International Space Station (ISS) night-time image in 2010 in Wuhan city as experiment images. Based on the multiple linear robust regression model, a process of intercalibration between LJ1-01 imagery and ISS imagery is proposed to build a comparable dataset. To detect urban expansion, using the above images at 130 m resolution, Jeffries-Matusita distance is used as an indicator to select the feature combination with the largest class separability. Among all the candidate combinations, the combination of the LJ1-01 image, the simulated LJ1-01 image, and their ratio best meets our requirements for classification. With this feature combination, a multi-temporal classification method based on Support Vector Machines and Back Propagating (BP) – Neural Network, respectively, is utilized to classify the study area into stable non-urban class, stable urban class, and expanding the urban class. The results of the multi-temporal classification show that the overall accuracy is around 90\\%, and the Kappa coefficients are larger than 0.84. For each class, the user’s accuracy is larger than 87\\%, and the producer’s accuracy is larger than 83\\%. The results of this study indicate that it is feasible to detect urban expansion by using multi-source NTL images at near 100 m resolution.'
+    'abstract': 'Night-time light (NTL) images have been proved as a type of reliable data source to map urban expansion. In this index, to investigate the potential of using multi-source NTL images at near 100 m resolution to detect urban expansion, we use a Luojia1-01 (LJ1-01) image in 2018 and an International Space Station (ISS) night-time image in 2010 in Wuhan city as experiment images. Based on the multiple linear robust regression model, a process of intercalibration between LJ1-01 imagery and ISS imagery is proposed to build a comparable dataset. To detect urban expansion, using the above images at 130 m resolution, Jeffries-Matusita distance is used as an indicator to select the feature combination with the largest class separability. Among all the candidate combinations, the combination of the LJ1-01 image, the simulated LJ1-01 image, and their ratio best meets our requirements for classification. With this feature combination, a multi-temporal classification method based on Support Vector Machines and Back Propagating (BP) – Neural Network, respectively, is utilized to classify the study area into stable non-urban class, stable urban class, and expanding the urban class. The results of the multi-temporal classification show that the overall accuracy is around 90\\%, and the Kappa coefficients are larger than 0.84. For each class, the user’s accuracy is larger than 87\\%, and the producer’s accuracy is larger than 83\\%. The results of this study indicate that it is feasible to detect urban expansion by using multi-source NTL images at near 100 m resolution.'
   },
   {
     'author': [ "Xi Li", "Noam Levin", "Jinlong Xie", "Deren Li" ],
@@ -259,7 +259,7 @@ const paper = [
     'publisher': '',
     'doi': '10.3390/s18113665',
     'url': 'http://dx.doi.org/10.3390/s18113665',
-    'abstract': 'Luojia 1-01 satellite, launched on 2 June 2018, provides a new data source of nighttime light at 130 m resolution and shows potential for mapping urban extent. In this paper, using Luojia 1-01 and VIIRS nighttime light imagery, we compared several methods for extracting urban areas, including Human Settlement Index (HSI), Simple Thresholding Segmentation (STS) and SVM supervised classification. According to the accuracy assessment, the HSI method using LJ1-01 data had the best performance in urban extent extraction, which presented the largest Kappa Coefficient value, 0.834, among all the results. For the urban areas extracted by VIIRS based HSI method, the largest Kappa Coefficient value was 0.772. In contrast, the largest Kappa Coefficient values obtained by STS method were 0.79 and 0.7512 respectively when using LJ1-01 and VIIRS data, while for SVM method the values were 0.7829 and 0.7486 when using Landsat-LJ and Landsat-VIIRS composite data respectively. The experimented results demonstrated that the utilization of nighttime light imagery can largely improve the accuracy of urban extent extraction and LJ1-01 data, with a higher resolution and more abundant spatial information, can lead to better identification results than its predecessors.'
+    'abstract': 'Luojia 1-01 satellite, launched on 2 June 2018, provides a new data source of nighttime light at 130 m resolution and shows potential for mapping urban extent. In this index, using Luojia 1-01 and VIIRS nighttime light imagery, we compared several methods for extracting urban areas, including Human Settlement Index (HSI), Simple Thresholding Segmentation (STS) and SVM supervised classification. According to the accuracy assessment, the HSI method using LJ1-01 data had the best performance in urban extent extraction, which presented the largest Kappa Coefficient value, 0.834, among all the results. For the urban areas extracted by VIIRS based HSI method, the largest Kappa Coefficient value was 0.772. In contrast, the largest Kappa Coefficient values obtained by STS method were 0.79 and 0.7512 respectively when using LJ1-01 and VIIRS data, while for SVM method the values were 0.7829 and 0.7486 when using Landsat-LJ and Landsat-VIIRS composite data respectively. The experimented results demonstrated that the utilization of nighttime light imagery can largely improve the accuracy of urban extent extraction and LJ1-01 data, with a higher resolution and more abundant spatial information, can lead to better identification results than its predecessors.'
   },
   {
     'author': [ 'Xi Li', 'Christopher Elvidge',
@@ -299,7 +299,7 @@ const paper = [
     'publisher': 'Taylor & Francis',
     'doi': '10.1080/10095020.2016.1159389',
     'url': 'https://doi.org/10.1080/10095020.2016.1159389',
-    'abstract': 'City lights, fishing boats, and oil fields are the major sources of nighttime lights, therefore the nighttime light images provide a unique source to map human beings and their activities from outer space. While most of the scholars focused on application of nighttime light remote sensing in urbanization and regional development, the actual fields are much wider. This paper summarized the applications of nighttime light remote sensing into fields such as the estimation of socioeconomic parameters, monitoring urbanization, evaluation of important events, analyzing light pollution, fishery, etc. For estimation of socioeconomic parameters, the most promising progress is that Gross Domestic Product and its growth rate have been estimated with statistical data and nighttime light data using econometric models. For monitoring urbanization, urban area and its dynamics can be extracted using different classification methods, and spatial analysis has been employed to map urban agglomeration. As sharp changes of nighttime light are associated with important socioeconomic events, the images have been used to evaluate humanitarian disasters, especially in the current Syrian and Iraqi wars. Light pollution is another hotspot of nighttime light application, as the night light is related to some diseases and abnormal behavior of animals, and the nighttime light images can provide light pollution information on large scales so that it is much easier to analyze the effects of light pollutions. In each field, we listed typical cases of the applications. At last, future studies of nighttime light remote sensing have been predicted.'
+    'abstract': 'City lights, fishing boats, and oil fields are the major sources of nighttime lights, therefore the nighttime light images provide a unique source to map human beings and their activities from outer space. While most of the scholars focused on application of nighttime light remote sensing in urbanization and regional development, the actual fields are much wider. This index summarized the applications of nighttime light remote sensing into fields such as the estimation of socioeconomic parameters, monitoring urbanization, evaluation of important events, analyzing light pollution, fishery, etc. For estimation of socioeconomic parameters, the most promising progress is that Gross Domestic Product and its growth rate have been estimated with statistical data and nighttime light data using econometric models. For monitoring urbanization, urban area and its dynamics can be extracted using different classification methods, and spatial analysis has been employed to map urban agglomeration. As sharp changes of nighttime light are associated with important socioeconomic events, the images have been used to evaluate humanitarian disasters, especially in the current Syrian and Iraqi wars. Light pollution is another hotspot of nighttime light application, as the night light is related to some diseases and abnormal behavior of animals, and the nighttime light images can provide light pollution information on large scales so that it is much easier to analyze the effects of light pollutions. In each field, we listed typical cases of the applications. At last, future studies of nighttime light remote sensing have been predicted.'
   },
   {
     'author': [ 'Fengrui Chen*', 'Xi Li*' ],
@@ -377,7 +377,7 @@ const paper = [
     'publisher': '',
     'doi': '10.1117/12.2068775',
     'url': 'https://doi.org/10.1117/12.2068775',
-    'abstract': 'Forest cover maps are essential for current researches of biomass estimation and global change, but traditional methods to derive forest maps are complex. These methods usually need training samples or other ancillary data as input, and are time- and labor- consuming for large scale applications. To make the process of forest cover mapping simple and rapid, in this paper, a simple spectral index called forest index (FI) was proposed to highlight forest land cover in Landsat scenes. The FI is derived from three bands, green, red and near-infrared (NIR) bands and an FI image can be classified into forest/non-forest map with a threshold. The overall accuracies of classification maps in the two study areas were 97.8% and 96.2%, respectively, which indicates that the FI is efficient at highlighting forest cover.'
+    'abstract': 'Forest cover maps are essential for current researches of biomass estimation and global change, but traditional methods to derive forest maps are complex. These methods usually need training samples or other ancillary data as input, and are time- and labor- consuming for large scale applications. To make the process of forest cover mapping simple and rapid, in this index, a simple spectral index called forest index (FI) was proposed to highlight forest land cover in Landsat scenes. The FI is derived from three bands, green, red and near-infrared (NIR) bands and an FI image can be classified into forest/non-forest map with a threshold. The overall accuracies of classification maps in the two study areas were 97.8% and 96.2%, respectively, which indicates that the FI is efficient at highlighting forest cover.'
   },
   {
     'author': [ 'Xi Li', 'Fengrui Chen', 'Xiaoling Chen' ],
@@ -561,7 +561,7 @@ const RepresentativePaper = () => {
     </Row>
     <List
       itemLayout="vertical"
-      dataSource={paper}
+      dataSource={index}
       size="small"
       renderItem={item => {
         if (item.isTop) {
@@ -609,7 +609,7 @@ export const Paper = () => {
       </Row>
       <List
         itemLayout="vertical"
-        dataSource={paper}
+        dataSource={index}
         size="small"
         footer={
           <div>
@@ -635,6 +635,41 @@ export const Paper = () => {
     </>
   )
 }
+const Patent = () => {
+  return <>
+    <Row style={{ marginTop: 20 }}>
+      <Title level={4}><FormattedMessage id="research.patent.title"/></Title>
+    </Row>
+    <Row style={{ fontSize: 16 }}>
+      <p>
+        李熙，马瑞琪，吴传清. 一种基于夜光遥感影像的城市范围提取方法（ZL201810246441.8）
+      </p>
+    </Row>
+  </>
+}
+
+const Honor = () => {
+  return <>
+    <Row style={{ marginTop: 20 }}>
+      <Title level={4}><FormattedMessage id="research.honor.title"/></Title>
+    </Row>
+    <Row style={{ fontSize: 16 }}>
+      <p>
+        天空地遥感数据高精度智能处理关键技术及应用，国家科技进步一等奖（11/15），2021 年
+      </p>
+    </Row>
+    <Row style={{ fontSize: 16 }}>
+      <p>
+        珞珈一号01星设计与数据处理关键技术，测绘科技进步特等奖（10/15），2020 年
+      </p>
+    </Row>
+    <Row style={{ fontSize: 16 }}>
+      <p>
+        武汉市优秀青年科技工作者，武汉市组织部，2015 年
+      </p>
+    </Row>
+  </>
+}
 
 const Research = props => {
   const { _ } = props;
@@ -646,6 +681,8 @@ const Research = props => {
       {/*<Row>*/}
       {/*  <Title level={4}><FormattedMessage id="research.project.title"/></Title>*/}
       {/*</Row>*/}
+      <Patent/>
+      <Honor/>
       <Paper/>
     </PageHeaderWrapper>
   )
