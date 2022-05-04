@@ -40,7 +40,7 @@ const Cooperation = props => {
             // style={{ width: 320 }}
             cover={<img alt="example" src={require("../../assets/images/cooperation_img_01.png")} />}
           >
-            <Meta description="2019年2月在马尼拉与向亚行银行首席经济学家泽田康幸教授汇报项目进展" />
+            <Meta description="2019年2月在马尼拉与向亚行首席经济学家泽田康幸教授汇报项目进展" />
           </Card>
         </Col>
         <Col flex="auto" span={12}>
