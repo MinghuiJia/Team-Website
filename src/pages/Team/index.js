@@ -7,207 +7,275 @@
 import { PageHeaderWrapper } from '@ant-design/pro-layout';
 import { Typography, Row, Table, Tag } from 'antd';
 import { connect } from 'dva';
-import {FormattedMessage} from "umi";
+import {FormattedMessage, Link} from "umi";
 import React from "react";
 
 const { Title, Text } = Typography;
 
 const students = [
   {
+    name: "吴极",
+    year: 2022,
+    degree: "博士",
+    img: "",
+    job: "",
+    blog_link: ""
+  },
+  {
+    name: "巩钰",
+    year: 2022,
+    degree: "硕士",
+    img: "",
+    job: "",
+    blog_link: ""
+  },
+  {
+    name: "曹汉瑞",
+    year: 2022,
+    degree: "硕士",
+    img: "",
+    job: "",
+    blog_link: ""
+  },
+  {
+    name: "何苗",
+    year: 2022,
+    degree: "硕士",
+    img: "",
+    job: "",
+    blog_link: ""
+  },
+  {
     name: "李津津",
     year: 2021,
     degree: "博士",
     img: "",
-    job: ""
+    job: "",
+    blog_link: ""
+  },
+  {
+    name: "钟芊芊",
+    year: 2021,
+    degree: "硕士",
+    img: "",
+    job: "",
+    blog_link: ""
   },
   {
     name: "贾明晖",
     year: 2021,
     degree: "硕士",
     img: "",
-    job: ""
+    job: "",
+    blog_link: "http://minghuijia.cn/"
   },
   {
     name: "邵子轩",
     year: 2021,
     degree: "硕士",
     img: "",
-    job: ""
+    job: "",
+    blog_link: "https://s-shao.github.io/"
   },
   {
     name: "张雨禾",
     year: 2021,
     degree: "硕士",
     img: "",
-    job: ""
+    job: "",
+    blog_link: ""
   },
   {
     name: "陈宇伦",
     year: 2020,
     degree: "硕士",
     img: "",
-    job: ""
+    job: "",
+    blog_link: ""
   },
   {
     name: "许强",
     year: 2020,
     degree: "硕士",
     img: "",
-    job: ""
+    job: "长光卫星技术股份有限公司",
+    blog_link: ""
   },
   {
     name: "袁孟欣",
     year: 2020,
     degree: "硕士",
     img: "",
-    job: ""
+    job: "",
+    blog_link: ""
   },
   {
     name: "李嘉琪",
     year: 2020,
     degree: "硕士",
     img: "",
-    job: ""
+    job: "北京市测绘设计研究院",
+    blog_link: ""
   },
   {
     name: "王妍",
     year: 2020,
     degree: "硕士",
     img: "",
-    job: ""
+    job: "",
+    blog_link: ""
   },
   {
     name: "Anurak Chakpor",
     year: 2020,
     degree: "硕士",
     img: "",
-    job: "泰国留学生"
+    job: "泰国留学生",
+    blog_link: ""
   },
   {
     name: "尹子民",
     year: 2019,
     degree: "硕士",
     img: "",
-    job: "腾讯公司"
+    job: "腾讯公司",
+    blog_link: ""
   },
   {
     name: "张雨欣",
     year: 2019,
     degree: "硕士",
     img: "",
-    job: "黑龙江地理信息测绘局"
+    job: "黑龙江地理信息测绘局",
+    blog_link: ""
   },
   {
     name: "尚小雨",
     year: 2019,
     degree: "硕士",
     img: "",
-    job: ""
+    job: "腾讯公司",
+    blog_link: ""
   },
   {
     name: "Vorlajuck Khantivong",
     year: 2019,
     degree: "硕士",
     img: "",
-    job: "老挝留学生"
+    job: "老挝留学生",
+    blog_link: ""
   },
   {
     name: "李西亚",
     year: 2018,
     degree: "硕士",
     img: "",
-    job: "高德地图"
+    job: "高德地图",
+    blog_link: ""
   },
   {
     name: "谢金龙",
     year: 2018,
     degree: "硕士",
     img: "",
-    job: "长光卫星技术有限公司"
+    job: "长光卫星技术有限公司",
+    blog_link: ""
   },
   {
     name: "赵文博",
     year: 2018,
     degree: "硕士",
     img: "",
-    job: "天津市测绘院"
+    job: "天津市测绘院",
+    blog_link: ""
   },
   {
     name: "张霖",
     year: 2018,
     degree: "硕士",
     img: "",
-    job: "武汉大学读博"
+    job: "武汉大学读博",
+    blog_link: ""
   },
   {
     name: "刘姗姗",
     year: 2017,
     degree: "硕士",
     img: "",
-    job: "华为公司"
+    job: "华为公司",
+    blog_link: ""
   },
   {
     name: "赵丽娴",
     year: 2017,
     degree: "硕士",
     img: "",
-    job: "国際航業株式会社"
+    job: "国際航業株式会社",
+    blog_link: ""
   },
   {
     name: "薛翔宇",
     year: 2017,
     degree: "硕士",
     img: "",
-    job: "吉林省科技厅"
+    job: "吉林省科技厅",
+    blog_link: ""
   },
   {
     name: "Muhammad Haris",
     year: 2017,
     degree: "硕士",
     img: "",
-    job: "巴基斯坦留学生"
+    job: "巴基斯坦留学生",
+    blog_link: ""
   },
   {
     name: "赵霞",
     year: 2016,
     degree: "博士",
     img: "",
-    job: ""
+    job: "浙江财经大学",
+    blog_link: ""
   },
   {
     name: "仇雅倩",
     year: 2016,
     degree: "硕士",
     img: "",
-    job: "中国人民银行"
+    job: "中国人民银行",
+    blog_link: ""
   },
   {
     name: "余涵若",
     year: 2016,
     degree: "硕士",
     img: "",
-    job: "百度地图"
+    job: "百度地图",
+    blog_link: ""
   },
   {
     name: "Faouzi Bouarouri",
     year: 2015,
     degree: "硕士",
     img: "",
-    job: "阿尔及利亚国家宇航局"
+    job: "阿尔及利亚国家宇航局",
+    blog_link: ""
   },
   {
     name: "王飒",
     year: 2012,
     degree: "硕士",
     img: "",
-    job: "中科院空天信息院读博"
+    job: "中科院空天信息院读博",
+    blog_link: ""
   },
   {
     name: "叶文韬",
     year: 2011,
     degree: "硕士",
     img: "",
-    job: "澳大利亚"
+    job: "澳大利亚",
+    blog_link: ""
   },
 ];
 
@@ -215,8 +283,14 @@ const columns = [
   {
     title: '姓名',
     dataIndex: 'name',
-    key: 'name',
-    render: text => <a>{text}</a>,
+    key: 'name',  //students[index].blog_link
+    render: (text, record, index) => {
+        if (students[index].blog_link == ""){
+          return <a >{text}</a>
+        } else {
+          return <a href={students[index].blog_link} target='_blank'>{text}</a>
+        }
+      }
   },
   {
     title: '入学年份',
