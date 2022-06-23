@@ -1,3 +1,11 @@
+/*
+ * @Author: jiaminghui
+ * @Date: 2022-05-09 10:45:16
+ * @LastEditTime: 2022-06-23 02:07:59
+ * @LastEditors: jiaminghui
+ * @FilePath: \lixi\src\components\SelectLang\index.jsx
+ * @Description: 
+ */
 // import { GlobalOutlined } from '@ant-design/icons';
 // import { Menu } from 'antd';
 // import { getLocale, setLocale } from 'umi';
@@ -71,7 +79,7 @@ const SelectLang = props => {
 
   return (
     <>
-      <Button style={{ marginTop: 15, marginRight: 20 }}
+      {/* <Button style={{ marginTop: 15, marginRight: 20 }}
               onClick={setCN}
               value={locales["zh-CN"]}>
         {languageLabels["zh-CN"]}
@@ -80,7 +88,7 @@ const SelectLang = props => {
               onClick={setEN}
               value={locales["en-US"]}>
         {languageLabels["en-US"]}
-      </Button>
+      </Button> */}
     </>
     );
 };

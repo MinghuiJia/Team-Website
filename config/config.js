@@ -79,6 +79,12 @@ export default defineConfig({
               component: './PopularScience',
             },
             {
+              name: 'EnglishProfile',
+              icon: 'user',
+              path: '/EnglishProfile',
+              component: './EnglishProfile',
+            },
+            {
               component: './404',
             },
           ],

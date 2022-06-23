@@ -5,12 +5,15 @@
  */
 
 import { PageHeaderWrapper } from '@ant-design/pro-layout';
-import { Typography, Row, Table, Tag } from 'antd';
+import { Typography, Row, Table, Tag, Card } from 'antd';
 import { connect } from 'dva';
 import {FormattedMessage, Link} from "umi";
 import React from "react";
 
+import { Carousel } from 'antd';
+
 const { Title, Text } = Typography;
+const { Meta } = Card;
 
 const students = [
   {
@@ -288,7 +291,7 @@ const columns = [
         if (students[index].blog_link == ""){
           return <a >{text}</a>
         } else {
-          return <a href={students[index].blog_link} target='_blank'>{text}</a>
+          return <a href={students[index].blog_link} target='_blank' without rel="noreferrer">{text}</a>
         }
       }
   },
@@ -305,6 +308,11 @@ const columns = [
   },
 ];
 
+const contentStyle = {
+  width:'100%',
+};
+
+
 const Team = props => {
   const { _ } = props;
 
@@ -312,6 +320,43 @@ const Team = props => {
     <PageHeaderWrapper style={{ backgroundColor: "#fff" }}
                        subTitle="我们是一个充满活力且友爱团队，能为你科研提供足够的资源。"
     >
+      <Row>
+        {/*<Title level={4}><FormattedMessage id="research.paper.title"/></Title>*/}
+        <Title level={4}>团队描述</Title>
+        <br></br>
+        
+      </Row>
+      <Row style={{ fontSize: 16 }}>
+        <p>
+          我们是一个充满活力且友爱团队，导师对学生提供全方位的培养支持，鼓励优秀学生攻读博士学位。
+        </p>
+      </Row>
+
+      {/* <Row>
+        <Title level={4}>团队活动照片</Title>
+      </Row> */}
+      <Carousel autoplay dotPosition={"bottom"} style={{width:'600px'}}>
+        <div>
+          {/* <img style={contentStyle} src={require("../../assets/images/team_pic/pic3.png")} /> */}
+          <img style={contentStyle} src={"https://cdn.jsdelivr.net/gh/MinghuiJia/LiXi_Blog_Img/team_pic/small_pic4.jpg"} />
+        </div>
+        <div>
+          {/* <img style={contentStyle} src={require("../../assets/images/team_pic/pic3.png")} /> */}
+          <img style={contentStyle} src={"https://cdn.jsdelivr.net/gh/MinghuiJia/LiXi_Blog_Img/team_pic/small_pic5.jpg"} />
+        </div>
+        <div>
+          {/* <img style={contentStyle} src={require("../../assets/images/team_pic/pic1.png")} /> */}
+          <img style={contentStyle} src={"https://cdn.jsdelivr.net/gh/MinghuiJia/LiXi_Blog_Img/team_pic/small_pic2.jpg"} />
+        </div>
+        <div>
+          {/* <img style={contentStyle} src={require("../../assets/images/team_pic/pic2.png")} /> */}
+          <img style={contentStyle} src={"https://cdn.jsdelivr.net/gh/MinghuiJia/LiXi_Blog_Img/team_pic/small_pic3.jpg"} />
+        </div>
+        <div>
+          {/* <img style={contentStyle} src={require("../../assets/images/team_pic/pic3.png")} /> */}
+          <img style={contentStyle} src={"https://cdn.jsdelivr.net/gh/MinghuiJia/LiXi_Blog_Img/team_pic/small_pic1.jpg"} />
+        </div>
+      </Carousel>
       <Row>
         {/*<Title level={4}><FormattedMessage id="research.paper.title"/></Title>*/}
         <Title level={4}>指导以及合作指导研究生共 {students.length} 名</Title>

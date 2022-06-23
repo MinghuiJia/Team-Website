@@ -1,9 +1,17 @@
+/*
+ * @Author: jiaminghui
+ * @Date: 2022-05-09 10:45:16
+ * @LastEditTime: 2022-06-21 23:16:11
+ * @LastEditors: jiaminghui
+ * @FilePath: \lixi\src\pages\Profile\locales\zh-CN.js
+ * @Description: 
+ */
 export default {
   'home.title': '个人简介',
   'home.subtitle': '欢迎各位同学报考研究生，并欢迎本科生加入我们的科研团队！',
   'home.teacher.name': '李熙',
   'home.teacher.address': '湖北省武汉市珞瑜路 129 号测绘遥感信息工程国家重点实验室',
-  'home.teacher.description1': '教授，博士生导师，国家高层次青年人才计划入选者（2021年），亚洲开发银行国际顾问，International Journal of Remote Sensing编委。发表学术论文30余篇，其中第一/通信作者SCI论文20余篇，是Science Advances、Nature Energy、Remote Sensing of Environment、Journal of Development Economics等30多种国际期刊的审稿人。主持国家自然科学基金、国家重点研发计划等多个国家和省部级项目。特别在夜光遥感方法和应用上开展了深入研究，研究成果被CNN、BBC、CCTV、《纽约时报》、美联社、路透社等600余家国际媒体以及联合国安理会引用。',
+  'home.teacher.description1': '教授，博士生导师，国家高层次青年人才计划入选者（2021年），在Nature Food, RSE等期刊发表学术论文40余篇，主持国家重点研发计划等多个项目。研究成果被CNN、BBC、CCTV、《纽约时报》等600余家国际媒体以及联合国安理会引用。',
   'home.teacher.resume': '个人简历',
   'home.teacher.2020.12-': '2020.12 至今 武汉大学测绘遥感信息工程国家重点实验室 教授',
   'home.teacher.2015.10-2020.11': '2015.10 - 2020.11 武汉大学测绘遥感信息工程国家重点实验室 副教授',
@@ -14,8 +22,15 @@ export default {
 
   'home.teacher.research.title': '研究方向',
   'home.teacher.research.1.title': '夜光遥感',
-  'home.teacher.research.2.title': '空间数据挖掘',
-  'home.teacher.research.3.title': '生态环境遥感',
+  'home.teacher.research.2.title': '遥感经济学',
+  'home.teacher.research.3.title': '空间数据挖掘',
+  'home.teacher.research.4.title': '生态环境遥感',
 
+  'home.teacher.research.parttime.title': '学术兼职',
+  'home.teacher.research.parttime.job1': '武汉大学-联合国卫星中心实习项目（WHU-UNOSAT internship）中方负责人',
+  'home.teacher.research.parttime.job2': '亚洲开发银行国际顾问',
+  'home.teacher.research.parttime.job3': 'International Journal of Remote Sensing编委',
 
+  'home.teacher.research.footer': '谷歌学术',
+  'home.teacher.research.detail': '详情见'
 };

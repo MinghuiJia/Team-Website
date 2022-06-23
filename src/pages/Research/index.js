@@ -544,7 +544,7 @@ const Factor = () => {
                () =>
                  <b>
                    <FormattedMessage id="factor.table.footer"/>
-                   <a style={{fontSize: 10, marginLeft: 10}} href={googleScholarUrl} target="_blank">
+                   <a style={{fontSize: 10, marginLeft: 10}} href={googleScholarUrl} target="_blank" rel="noreferrer">
                      <FormattedMessage id="factor.table.detail"/>
                    </a>
                  </b>
@@ -571,10 +571,10 @@ const RepresentativePaper = () => {
             >
               <List.Item.Meta
                 title={
-                  <a href={item.url} download style={{fontSize: 14}} target="_blank">
+                  <a href={item.url} download style={{fontSize: 14, textDecoration: 'none'}} target="_blank" rel="noreferrer">
                     {
                       AuthorList(item.author)
-                    }{item.year + ". " + item.title + ", " + item.journal + ", " + item.volume + (item.number === "" ? (item.number) : ("(" + item.number + ")")) + ", " + item.pages}
+                    }{item.year + ". " + item.title + ", "}{<i style={{color: '#1890ff'}}>{item.journal}</i>}{" ," + item.volume + (item.number === "" ? (item.number) : ("(" + item.number + ")")) + " ," + item.pages}
                   </a>
                 }
               />
@@ -591,7 +591,7 @@ const AuthorList = (list) => {
   const tagList = []
   list.forEach((item) => {
     if (item === 'Xi Li' || item === 'Li Xi' || item === '李熙' || item === 'Xi Li*' || item === 'Li Xi*') {
-      tagList.push(<Text strong>{item + ", "}</Text>)
+      tagList.push(<Text style={{fontWeight:'bolder', color: '#1890ff'}}>{item + ", "}</Text>)
     } else {
       tagList.push(item + ", ");
     }
@@ -602,7 +602,7 @@ const AuthorList = (list) => {
 export const Paper = () => {
   return (
     <>
-      <Factor/>
+      {/* <Factor/> */}
       <RepresentativePaper/>
       <Row style={{ marginTop: 20 }}>
         <Title level={4}><FormattedMessage id="research.paper.title"/></Title>
@@ -622,11 +622,11 @@ export const Paper = () => {
           >
             <List.Item.Meta
               title={
-                <a href={item.url} download style={{fontSize: 14}} target="_blank">
-                  {
-                    AuthorList(item.author)
-                  }{item.year + ". " + item.title + ", " + item.journal + ", " + item.volume + (item.number === "" ? (item.number) :  ("(" +  item.number + ")")) + ", " + item.pages}
-                </a>
+                <a href={item.url} download style={{fontSize: 14, textDecoration: 'none'}} target="_blank" rel="noreferrer">
+                    {
+                      AuthorList(item.author)
+                    }{item.year + ". " + item.title + ", "}{<i style={{color: '#1890ff'}}>{item.journal}</i>}{" ," + item.volume + (item.number === "" ? (item.number) : ("(" + item.number + ")")) + " ," + item.pages}
+                  </a>
               }
             />
           </List.Item>

@@ -9,6 +9,8 @@ const {Title, Text} = Typography;
 const {Meta} = Card;
 const selectedLang = getLocale();
 
+const googleScholarUrl = 'https://scholar.google.com/citations?hl=zh-CN&user=eWiOELoAAAAJ'
+
 export default () => (
   <PageHeaderWrapper style={{backgroundColor: "#fff"}}
                      title={<FormattedMessage id="home.title"/>}
@@ -41,6 +43,15 @@ export default () => (
           </Card>
         </Col>
       </Row>
+      <Row>
+        <b>
+            <FormattedMessage id="home.teacher.research.footer"/>
+            <a style={{fontSize: 10, marginLeft: 10}} href={googleScholarUrl} target="_blank" rel="noreferrer">
+              <FormattedMessage id="home.teacher.research.detail"/>
+            </a>
+        </b>
+      </Row>
+      
 
       <Row style={{marginTop: 20}}>
         <Title level={4}><FormattedMessage id="home.teacher.research.title"/></Title>
@@ -60,6 +71,30 @@ export default () => (
           <FormattedMessage id="home.teacher.research.3.title"/>
         </li>
       </Row>
+      <Row style={{fontSize: 16}}>
+        <li>
+          <FormattedMessage id="home.teacher.research.4.title"/>
+        </li>
+      </Row>
+
+      <Row style={{marginTop: 20}}>
+        <Title level={4}><FormattedMessage id="home.teacher.research.parttime.title"/></Title>
+      </Row>
+      <Row style={{fontSize: 16}}>
+        <li>
+          <FormattedMessage id="home.teacher.research.parttime.job1"/>
+        </li>
+      </Row>
+      <Row style={{fontSize: 16}}>
+        <li>
+          <FormattedMessage id="home.teacher.research.parttime.job2"/>
+        </li>
+      </Row>
+      <Row style={{fontSize: 16}}>
+        <li>
+          <FormattedMessage id="home.teacher.research.parttime.job3"/>
+        </li>
+      </Row>
       {
         selectedLang === 'zh-CN' ? (
           <>
@@ -76,11 +111,11 @@ export default () => (
                 <FormattedMessage id="home.teacher.2015.10-2020.11"/>
               </li>
             </Row>
-            <Row style={{fontSize: 16}}>
+            {/* <Row style={{fontSize: 16}}>
               <li>
                 <FormattedMessage id="home.teacher.2014.09-2015.09"/>
               </li>
-            </Row>
+            </Row> */}
             <Row style={{fontSize: 16}}>
               <li>
                 <FormattedMessage id="home.teacher.2009.07-2015.09"/>
