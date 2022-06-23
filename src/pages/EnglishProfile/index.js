@@ -1,7 +1,7 @@
 /*
  * @Author: jiaminghui
  * @Date: 2022-06-22 01:22:54
- * @LastEditTime: 2022-06-23 02:10:19
+ * @LastEditTime: 2022-06-23 20:16:26
  * @LastEditors: jiaminghui
  * @FilePath: \lixi\src\pages\EnglishProfile\index.js
  * @Description: 
@@ -209,18 +209,18 @@ export const Paper = () => {
  
    return (
     <PageHeaderWrapper style={{ backgroundColor: "#fff" }}
-                        title={"Profile"}
-                        subTitle={"Welcome to our group!"}
+                        title={<FormattedMessage id="home.profile.title"/>}
+                        subTitle={<FormattedMessage id="home.profile.subTitle"/>}
     >
       <Row>
         <Col flex="auto" style={{marginBottom: 20}}>
           <Card actions={[
             <span style={{fontSize: 15}}>
-              <EnvironmentTwoTone/>&nbsp;&nbsp;<Text>{"129 Luoyu Road, State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing (LIESMARS), Wuhan University, Wuhan 430079, China"}</Text>
+              <EnvironmentTwoTone/>&nbsp;&nbsp;<Text>{<FormattedMessage id="home.profile.address"/>}</Text>
             </span>,
             <span style={{fontSize: 15}}>
-              <MailTwoTone/>&nbsp;&nbsp;<Text>lixi@whu.edu.cn</Text>&nbsp;&nbsp;&nbsp;&nbsp;
-              <MailTwoTone/>&nbsp;&nbsp;<Text>li_rs@163.com</Text>
+              <MailTwoTone/>&nbsp;&nbsp;<Text><FormattedMessage id="home.profile.email1"/></Text>&nbsp;&nbsp;&nbsp;&nbsp;
+              <MailTwoTone/>&nbsp;&nbsp;<Text><FormattedMessage id="home.profile.email2"/></Text>
             </span>
           ]}>
             <Meta
@@ -231,7 +231,7 @@ export const Paper = () => {
               title={<span style={{fontSize: 20}}>Dr. Xi Li</span>}
               description={
                 <p style={{textIndent:"2em"}}>
-                  Dr. Xi Li is a professor in the State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing (LIESMARS), Wuhan University. He works on remote sensing of night-time light, including application of night-time light data, radiative transfer model of night-time light and night-time satellite development.
+                  <FormattedMessage id="home.profile.biography"/>
                 </p>
               }
             />
@@ -244,12 +244,12 @@ export const Paper = () => {
       </Row>
       <Row style={{fontSize: 16}}>
         <li>
-          Remote sensing of night-time light
+        <FormattedMessage id="home.profile.research1"/>
         </li>
       </Row>
       <Row style={{fontSize: 16}}>
         <li>
-          Land cover change mapping
+        <FormattedMessage id="home.profile.research2"/>
         </li>
       </Row>
 
@@ -258,12 +258,12 @@ export const Paper = () => {
       </Row>
       <Row style={{fontSize: 16}}>
         <li>
-          2000/9-2004/6, Photogrammetry and Remote Sensing, Wuhan University, Bachelor
+          <FormattedMessage id="home.profile.education.2000.9"/>
         </li>
       </Row>
       <Row style={{fontSize: 16}}>
         <li>
-          2004/9-2009/6, Photogrammetry and Remote Sensing, Wuhan University, Ph.D
+          <FormattedMessage id="home.profile.education.2004.9"/>
         </li>
       </Row>
 
@@ -272,22 +272,22 @@ export const Paper = () => {
       </Row>
       <Row style={{fontSize: 16}}>
         <li>
-          Editorial Board Member, International Journal of Remote Sensing
+          <FormattedMessage id="home.profile.academic.service1"/>
         </li>
       </Row>
       <Row style={{fontSize: 16}}>
         <li>
-          International Consultant, Asian Development Bank
+          <FormattedMessage id="home.profile.academic.service2"/>
         </li>
       </Row>
       <Row style={{fontSize: 16}}>
         <li>
-          Coordinator, UNOSAT-WHU collaboration
+          <FormattedMessage id="home.profile.academic.service3"/>
         </li>
       </Row>
       <Row style={{fontSize: 16}}>
         <li>
-          Expert, Group on Earth Observations
+          <FormattedMessage id="home.profile.academic.service4"/>
         </li>
       </Row>
 
