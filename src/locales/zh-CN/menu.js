@@ -1,7 +1,7 @@
 /*
  * @Author: jiaminghui
  * @Date: 2022-05-09 10:45:16
- * @LastEditTime: 2022-06-22 01:32:12
+ * @LastEditTime: 2022-06-23 23:13:02
  * @LastEditors: jiaminghui
  * @FilePath: \lixi\src\locales\zh-CN\menu.js
  * @Description: 
@@ -18,5 +18,5 @@ export default {
   'menu.research.patent': '专利发明',
   'menu.research.honor': '学术奖励',
   'menu.popular-science': '夜光遥感科普',
-  'menu.EnglishProfile': '英文简介',
+  'menu.EnglishProfile': 'English',
 };

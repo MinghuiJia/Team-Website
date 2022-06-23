@@ -1,7 +1,7 @@
 /*
  * @Author: jiaminghui
  * @Date: 2022-06-22 01:22:54
- * @LastEditTime: 2022-06-23 20:16:26
+ * @LastEditTime: 2022-06-23 23:35:46
  * @LastEditors: jiaminghui
  * @FilePath: \lixi\src\pages\EnglishProfile\index.js
  * @Description: 
@@ -215,13 +215,13 @@ export const Paper = () => {
       <Row>
         <Col flex="auto" style={{marginBottom: 20}}>
           <Card actions={[
-            <span style={{fontSize: 15}}>
-              <EnvironmentTwoTone/>&nbsp;&nbsp;<Text>{<FormattedMessage id="home.profile.address"/>}</Text>
-            </span>,
-            <span style={{fontSize: 15}}>
-              <MailTwoTone/>&nbsp;&nbsp;<Text><FormattedMessage id="home.profile.email1"/></Text>&nbsp;&nbsp;&nbsp;&nbsp;
-              <MailTwoTone/>&nbsp;&nbsp;<Text><FormattedMessage id="home.profile.email2"/></Text>
-            </span>
+            // <span style={{fontSize: 15}}>
+            //   <EnvironmentTwoTone/>&nbsp;&nbsp;<Text>{<FormattedMessage id="home.profile.address"/>}</Text>
+            // </span>,
+            // <span style={{fontSize: 15, textAlign: 'left'}}>
+            //   <MailTwoTone/>&nbsp;&nbsp;<Text><FormattedMessage id="home.profile.email1"/></Text>&nbsp;&nbsp;&nbsp;&nbsp;
+            //   <MailTwoTone/>&nbsp;&nbsp;<Text><FormattedMessage id="home.profile.email2"/></Text>
+            // </span>
           ]}>
             <Meta
               style={{fontSize: 16}}
@@ -230,7 +230,7 @@ export const Paper = () => {
               }
               title={<span style={{fontSize: 20}}>Dr. Xi Li</span>}
               description={
-                <p style={{textIndent:"2em"}}>
+                <p>
                   <FormattedMessage id="home.profile.biography"/>
                 </p>
               }
@@ -238,7 +238,16 @@ export const Paper = () => {
           </Card>
         </Col>
       </Row>
-
+      
+      <Row style={{marginTop: 20}}>
+        <Title level={4}>Contact</Title>
+      </Row>
+      <Row style={{fontSize: 16}}>
+        <span>
+          <MailTwoTone/>&nbsp;&nbsp;<FormattedMessage id="home.profile.email2"/>,&nbsp;<FormattedMessage id="home.profile.email1"/>
+        </span>
+      </Row>
+      
       <Row style={{marginTop: 20}}>
         <Title level={4}>Research interests</Title>
       </Row>
@@ -295,7 +304,7 @@ export const Paper = () => {
         <Title level={4}>Media Report</Title>
       </Row>
       <Row style={{fontSize: 16}}>
-        <p style={{textIndent:"2em"}}>
+        <p>
           His research on Syrian Crisis has supported 7418th meeting of United Nations Security Council and has widely been reported by hundreds of global media including CNN, BBC,&nbsp; 
           <a href="https://www.reuters.com/article/mideast-crisis-syria-light-idINKBN0M807J20150312" target={"_blank"} without rel="noreferrer">Reuters</a>
           &nbsp;and <a href='https://www.nytimes.com/2015/03/15/world/an-ever-bleaker-syria-from-all-vantage-points.html' target={"_blank"} without rel="noreferrer">New York Times</a>.

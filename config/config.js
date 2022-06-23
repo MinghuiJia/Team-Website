@@ -81,7 +81,7 @@ export default defineConfig({
             {
               name: 'EnglishProfile',
               icon: 'user',
-              path: '/EnglishProfile',
+              path: '/en',
               component: './EnglishProfile',
             },
             {
