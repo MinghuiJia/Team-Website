@@ -344,10 +344,9 @@ const Team = props => {
           <img style={contentStyle} src={require("../../assets/images/team_pic/small_pic5.jpg")} />
           {/* <img style={contentStyle} src={"https://cdn.jsdelivr.net/gh/MinghuiJia/LiXi_Blog_Img/team_pic/small_pic5.jpg"} /> */}
         </div>
-        <div>
+        {/* <div>
           <img style={contentStyle} src={require("../../assets/images/team_pic/small_pic2.jpg")} />
-          {/* <img style={contentStyle} src={"https://cdn.jsdelivr.net/gh/MinghuiJia/LiXi_Blog_Img/team_pic/small_pic2.jpg"} /> */}
-        </div>
+        </div> */}
         <div>
           <img style={contentStyle} src={require("../../assets/images/team_pic/small_pic3.jpg")} />
           {/* <img style={contentStyle} src={"https://cdn.jsdelivr.net/gh/MinghuiJia/LiXi_Blog_Img/team_pic/small_pic3.jpg"} /> */}
