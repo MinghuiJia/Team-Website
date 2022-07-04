@@ -352,12 +352,12 @@ const Team = props => {
           {/* <img style={contentStyle} src={"https://cdn.jsdelivr.net/gh/MinghuiJia/LiXi_Blog_Img/team_pic/small_pic3.jpg"} /> */}
         </div>
         <div>
-          {/* <img style={contentStyle} src={require("../../assets/images/team_pic/small_pic1.jpg")} /> */}
-          <img style={contentStyle} src={"https://cdn.jsdelivr.net/gh/MinghuiJia/LiXi_Blog_Img/team_pic/small_pic1.jpg"} />
+          <img style={contentStyle} src={require("../../assets/images/team_pic/small_pic1.jpg")} />
+          {/* <img style={contentStyle} src={"https://cdn.jsdelivr.net/gh/MinghuiJia/LiXi_Blog_Img/team_pic/small_pic1.jpg"} /> */}
         </div>
       </Carousel>
       <Row>
-        {/*<Title level={4}><FormattedMessage id="research.paper.title"/></Title>*/}
+        {/* <Title level={4}><FormattedMessage id="research.paper.title"/></Title> */}
         <Title level={4}>指导以及合作指导研究生共 {students.length} 名</Title>
       </Row>
       <Table pagination={false}
