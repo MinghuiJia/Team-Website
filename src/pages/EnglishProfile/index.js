@@ -1,7 +1,7 @@
 /*
  * @Author: jiaminghui
  * @Date: 2022-06-22 01:22:54
- * @LastEditTime: 2022-07-04 16:25:46
+ * @LastEditTime: 2022-07-22 20:23:30
  * @LastEditors: jiaminghui
  * @FilePath: \lixi\src\pages\EnglishProfile\index.js
  * @Description: 
@@ -235,7 +235,7 @@ export const Paper = () => {
             <Meta
               style={{fontSize: 16}}
               avatar={
-                <Avatar size={128} src={require("../../assets/LiXi_english.png")}/>
+                <Avatar size={128} src={require("../../assets/LiXi_english2.png")}/>
               }
               title={<span style={{fontSize: 20}}>Dr. Xi Li</span>}
               description={
