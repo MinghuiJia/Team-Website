@@ -125,7 +125,7 @@ const students = [
     year: 2020,
     degree: "硕士",
     img: "",
-    job: "",
+    job: "江苏省测绘工程院",
     blog_link: ""
   },
   {

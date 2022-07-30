@@ -1,7 +1,7 @@
 /*
  * @Author: jiaminghui
  * @Date: 2022-06-22 01:22:54
- * @LastEditTime: 2022-07-22 20:23:30
+ * @LastEditTime: 2022-07-22 22:22:16
  * @LastEditors: jiaminghui
  * @FilePath: \lixi\src\pages\EnglishProfile\index.js
  * @Description: 
@@ -18,6 +18,8 @@
  import {FormattedMessage, Link, getLocale} from "umi";
  import {EnvironmentTwoTone, MailTwoTone} from '@ant-design/icons';
  import React from "react";
+
+ const {Paragraph} = Typography;
 
  const index = [
   {
@@ -231,6 +233,7 @@ export const Paper = () => {
             //   <MailTwoTone/>&nbsp;&nbsp;<Text><FormattedMessage id="home.profile.email1"/></Text>&nbsp;&nbsp;&nbsp;&nbsp;
             //   <MailTwoTone/>&nbsp;&nbsp;<Text><FormattedMessage id="home.profile.email2"/></Text>
             // </span>
+            // <img src={require("../../assets/LiXi_english.png")}></img>
           ]}>
             <Meta
               style={{fontSize: 16}}
@@ -244,10 +247,24 @@ export const Paper = () => {
                 </p>
               }
             />
+            
           </Card>
         </Col>
+
+        {/* <Col flex="auto" style={{marginBottom: 20}}>
+          <List.Item>
+            <Card
+              cover={<img alt="照片" src={require("../../assets/LiXi_english.png")} />}
+            />
+            <Paragraph style={{fontSize: 16}}>
+              <FormattedMessage id="home.profile.biography"/>
+            </Paragraph>
+            
+          </List.Item>
+        </Col> */}
       </Row>
       
+
       <Row style={{marginTop: 20}}>
         <Title level={4}>Contact</Title>
       </Row>
