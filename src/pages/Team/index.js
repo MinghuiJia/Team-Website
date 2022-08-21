@@ -93,7 +93,7 @@ const students = [
     year: 2020,
     degree: "硕士",
     img: "",
-    job: "联影医疗",
+    job: "",
     blog_link: ""
   },
   {
