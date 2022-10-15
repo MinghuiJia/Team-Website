@@ -17,6 +17,14 @@ const { Meta } = Card;
 
 const students = [
   {
+    name: "丁宇",
+    year: 2022,
+    degree: "博士",
+    img: "",
+    job: "",
+    blog_link: ""
+  },
+  {
     name: "吴极",
     year: 2022,
     degree: "博士",
@@ -46,6 +54,22 @@ const students = [
     degree: "硕士",
     img: "",
     job: "",
+    blog_link: ""
+  },
+  {
+    name: "万方",
+    year: 2022,
+    degree: "博士（在职）",
+    img: "",
+    job: "深创投集团",
+    blog_link: ""
+  },
+  {
+    name: "Kolan",
+    year: 2022,
+    degree: "硕士",
+    img: "",
+    job: "泰国留学生",
     blog_link: ""
   },
   {
@@ -93,7 +117,7 @@ const students = [
     year: 2020,
     degree: "硕士",
     img: "",
-    job: "",
+    job: "联影医疗",
     blog_link: ""
   },
   {
@@ -157,7 +181,7 @@ const students = [
     year: 2019,
     degree: "硕士",
     img: "",
-    job: "腾讯公司",
+    job: "香港理工大学读博",
     blog_link: ""
   },
   {
@@ -189,7 +213,7 @@ const students = [
     year: 2018,
     degree: "硕士",
     img: "",
-    job: "天津市测绘院",
+    job: "中山大学读博",
     blog_link: ""
   },
   {
@@ -299,6 +323,11 @@ const columns = [
     title: '入学年份',
     dataIndex: 'year',
     key: 'year',
+  },
+  {
+    title: '层次',
+    dataIndex: 'degree',
+    key: 'degree',
   },
   {
     title: '毕业去向',
