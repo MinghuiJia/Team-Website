@@ -112,14 +112,14 @@ const students = [
     job: "",
     blog_link: ""
   },
-  {
-    name: "陈宇伦",
-    year: 2020,
-    degree: "硕士",
-    img: "",
-    job: "联影医疗",
-    blog_link: ""
-  },
+  // {
+  //   name: "陈宇伦",
+  //   year: 2020,
+  //   degree: "硕士",
+  //   img: "",
+  //   job: "联影医疗",
+  //   blog_link: ""
+  // },
   {
     name: "许强",
     year: 2020,
