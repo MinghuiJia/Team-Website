@@ -1,7 +1,7 @@
 /*
  * @Author: jiaminghui
  * @Date: 2022-05-09 10:45:16
- * @LastEditTime: 2022-06-21 23:16:11
+ * @LastEditTime: 2022-12-28 15:28:41
  * @LastEditors: jiaminghui
  * @FilePath: \lixi\src\pages\Profile\locales\zh-CN.js
  * @Description: 
@@ -11,7 +11,7 @@ export default {
   'home.subtitle': '欢迎各位同学报考研究生，并欢迎本科生加入我们的科研团队！',
   'home.teacher.name': '李熙',
   'home.teacher.address': '湖北省武汉市珞瑜路 129 号测绘遥感信息工程国家重点实验室',
-  'home.teacher.description1': '教授，博士生导师，国家高层次青年人才计划入选者（2021年），在Nature Food, RSE等期刊发表学术论文40余篇，主持国家重点研发计划等多个项目。研究成果被CNN、BBC、CCTV、《纽约时报》等600余家国际媒体以及联合国安理会引用。',
+  'home.teacher.description1': '教授，博士生导师，国家高层次青年人才计划入选者（2021年），在Nature Food, RSE等期刊发表学术论文40余篇，主持国家重点研发计划等多个项目。研究成果被CCTV、CNN、BBC、美联社、路透社、法新社、《纽约时报》、《费加罗时报》、《科学美国人》等600余家国际媒体报道，并被联合国安理会、国务院办公厅、湖北省政府采纳。',
   'home.teacher.resume': '个人简历',
   'home.teacher.2020.12-': '2020.12 至今 武汉大学测绘遥感信息工程国家重点实验室 教授',
   'home.teacher.2015.10-2020.11': '2015.10 - 2020.11 武汉大学测绘遥感信息工程国家重点实验室 副教授',
