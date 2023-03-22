@@ -684,6 +684,10 @@ const Patent = () => {
       <p>
         李熙，尹子民，宋杨，李长辉. 一种基于异源夜光遥感影像的城市扩张检测方法及装置（ZL201910931480.6）
       </p>
+      <br></br>
+      <p>
+        李熙，尚小雨，李长辉，宋杨. 一种夜光遥感影像相对辐射校正方法（ZL201911378502.7）
+      </p>
     </Row>
   </>
 }
@@ -721,8 +725,8 @@ const Research = props => {
       {/*<Row>*/}
       {/*  <Title level={4}><FormattedMessage id="research.project.title"/></Title>*/}
       {/*</Row>*/}
-      <Patent/>
       <Honor/>
+      <Patent/>
       <Paper/>
     </PageHeaderWrapper>
   )
