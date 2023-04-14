@@ -36,7 +36,15 @@ export default () => (
               title={<span style={{fontSize: 20}}><FormattedMessage id="home.teacher.name"/></span>}
               description={
                 <>
-                  <FormattedMessage id="home.teacher.description1"/>
+                  <span style={{textIndent:"2em",display:"inline-block"}}>
+                    <FormattedMessage id="home.teacher.description1"/>
+                  </span>
+                  
+                  <br/>
+                  <span style={{textIndent:"2em",display:"inline-block"}}>
+                    <FormattedMessage id="home.teacher.description2"/>
+                  </span>
+                  
                 </>
               }
             />

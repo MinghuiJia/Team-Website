@@ -1,7 +1,7 @@
 /*
  * @Author: jiaminghui
  * @Date: 2022-05-09 10:45:16
- * @LastEditTime: 2022-06-22 01:20:50
+ * @LastEditTime: 2023-04-14 13:45:54
  * @LastEditors: jiaminghui
  * @FilePath: \lixi\src\pages\News\index.js
  * @Description: 
@@ -26,13 +26,23 @@ const News = props => {
   return (
     <PageHeaderWrapper style={{ backgroundColor: "#fff" }}>
       <List size="small" style={{ fontSize: 15 }}>
+        <center style={{fontSize:16, fontWeight:'bolder', color:"#000000"}}>夜光遥感评估土叙地震</center>
+        <List.Item style={{display:"flex"}}>
+          <Paragraph style={{flex:"2"}}>
+            2023年2月6日，为了响应联合国人道主义事务协调办公室（UNOCHA）应对土叙大地震的人道主义需求，联合国卫星中心（UNOSAT）激活了面向土叙地震的紧急制图服务。李熙教授团队受邀参加夜光遥感评估任务，利用夜光遥感技术从震区尺度和城市尺度，分别评估了土叙地震对城市电力的损害程度。该项成果已经在联合国卫星中心（UNOSAT）官方网站发布，并被<Link href="https://www.chinatimes.com/realtimenews/20230216004264-260409?chdtv=" target="_blank">中时新闻网</Link>报道。
+          </Paragraph>
+          <Card style={{flex:"1"}}
+            cover={<img alt="新闻照片" src={require("../../assets/news/tuxu.jpg")} />}
+          />
+        </List.Item>
+
         <center style={{fontSize:16, fontWeight:'bolder', color:"#000000"}}>多源遥感数据评估叙利亚农业生产</center>
-        <List.Item>
-          <Paragraph>
+        <List.Item style={{display:"flex"}}>
+          <Paragraph style={{flex:"2"}}>
             <Link href="https://baijiahao.baidu.com/s?id=1722746888330081543&wfr=spider&for=pc" target="_blank">战争会给一个国家的耕地带来怎样影响？不用去战区调查，用遥感卫星就能“看”得一清二楚。</Link>
             2022年01月23日，武汉大学测绘遥感信息工程国家重点实验室李熙团队，在《自然-食品》杂志在线发表的一项研究成果显示，20多年间战争给叙利亚带来了巨大的粮食危机。此前，李熙团队还利用夜光遥感信息，研究得出“四年内战使叙利亚灯光减少了83%”的结论，直接展示了叙利亚内战的惨烈程度，这一成果被600余家国内外媒体转载，还被联合国安理会引用。
           </Paragraph>
-          <Card
+          <Card  style={{flex:"1"}}
             cover={<img alt="新闻照片" src={require("../../assets/news/nature_food.jpg")} />}
           />
         </List.Item>
@@ -50,11 +60,11 @@ const News = props => {
           </Paragraph>
         </List.Item>
         <center style={{fontSize:16, fontWeight:'bolder', color:"#000000"}}>评估我国区域协调发展</center>
-        <List.Item>
-          <Paragraph>
+        <List.Item style={{display:"flex"}}>
+          <Paragraph style={{flex:"2"}}>
             2017年12月18日，中央电视台新闻联播在“区域协调发展绘就新蓝图”专访李熙博士并报道了团队在中国区域协调发展的研究成果，观看请点击<Link href="http://tv.cctv.com/2017/12/18/VIDElz0nV5Sa2OK1wpZwroYm171218.shtml" target="_blank">央视官网</Link>，专访从59秒开始。
           </Paragraph>
-          <Card
+          <Card style={{flex:"1"}}
             cover={<img alt="个人照片" src={require("../../assets/news/person.png")} />}
           />
         </List.Item>
