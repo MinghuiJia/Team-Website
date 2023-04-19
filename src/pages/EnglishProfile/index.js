@@ -1,7 +1,7 @@
 /*
  * @Author: jiaminghui
  * @Date: 2022-06-22 01:22:54
- * @LastEditTime: 2022-07-22 22:22:16
+ * @LastEditTime: 2023-04-19 19:11:24
  * @LastEditors: jiaminghui
  * @FilePath: \lixi\src\pages\EnglishProfile\index.js
  * @Description: 
@@ -287,6 +287,11 @@ export const Paper = () => {
         <FormattedMessage id="home.profile.research2"/>
         </li>
       </Row>
+      <Row style={{fontSize: 16}}>
+        <li>
+        <FormattedMessage id="home.profile.research3"/>
+        </li>
+      </Row>
 
       <Row style={{marginTop: 20}}>
         <Title level={4}>Education</Title>
@@ -310,7 +315,7 @@ export const Paper = () => {
           <FormattedMessage id="home.profile.academic.service1"/>
         </li>
       </Row>
-      <Row style={{fontSize: 16}}>
+      {/* <Row style={{fontSize: 16}}>
         <li>
           <FormattedMessage id="home.profile.academic.service2"/>
         </li>
@@ -319,10 +324,69 @@ export const Paper = () => {
         <li>
           <FormattedMessage id="home.profile.academic.service3"/>
         </li>
-      </Row>
+      </Row> */}
       <Row style={{fontSize: 16}}>
         <li>
           <FormattedMessage id="home.profile.academic.service4"/>
+        </li>
+      </Row>
+
+      <Row style={{marginTop: 20}}>
+        <Title level={4}>Social Service</Title>
+      </Row>
+      <Row style={{fontSize: 16}}>
+        <li>
+          <a href="https://time.com/3741451/syria-lights-civil-war-satellite/" target={"_blank"} without rel="noreferrer">
+            <FormattedMessage id="home.profile.social.service1"/>
+          </a>
+        </li>
+      </Row>
+      <Row style={{fontSize: 16}}>
+        <li>
+          <a href="https://www.care-international.org/news/care-warns-three-years-escalation-conflict-yemeni-people-left-sick-starving-and-plunged" target={"_blank"} without rel="noreferrer">
+            <FormattedMessage id="home.profile.social.service2"/>
+          </a>
+        </li>
+      </Row>
+      <Row style={{fontSize: 16}}>
+        <li>
+          <a href="https://unosat.org/products/3495" target={"_blank"} without rel="noreferrer">
+            <FormattedMessage id="home.profile.social.service3"/>
+          </a>
+        </li>
+      </Row>
+
+      <Row style={{marginTop: 20}}>
+        <Title level={4}>International Partners</Title>
+      </Row>
+      <Row style={{fontSize: 16}}>
+        <li>
+          <FormattedMessage id="home.profile.partners1"/>
+        </li>
+      </Row>
+      <Row style={{fontSize: 16}}>
+        <li>
+          <FormattedMessage id="home.profile.partners2"/>
+        </li>
+      </Row>
+      <Row style={{fontSize: 16}}>
+        <li>
+          <FormattedMessage id="home.profile.partners3"/>
+        </li>
+      </Row>
+      <Row style={{fontSize: 16}}>
+        <li>
+          <FormattedMessage id="home.profile.partners4"/>
+        </li>
+      </Row>
+      <Row style={{fontSize: 16}}>
+        <li>
+          <FormattedMessage id="home.profile.partners5"/>
+        </li>
+      </Row>
+      <Row style={{fontSize: 16}}>
+        <li>
+          <FormattedMessage id="home.profile.partners6"/>
         </li>
       </Row>
 
