@@ -1,7 +1,7 @@
 /*
  * @Author: jiaminghui
  * @Date: 2022-06-23 19:51:40
- * @LastEditTime: 2023-04-19 19:13:37
+ * @LastEditTime: 2023-04-20 00:45:25
  * @LastEditors: jiaminghui
  * @FilePath: \lixi\src\pages\EnglishProfile\locales\zh-CN.js
  * @Description: 
@@ -12,7 +12,7 @@ export default {
   'home.profile.address': '129 Luoyu Road, State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing (LIESMARS), Wuhan University, Wuhan 430079, China',
   'home.profile.email1': 'lixi@whu.edu.cn',
   'home.profile.email2': 'li_rs@163.com',
-  'home.profile.biography': 'Dr. Xi Li is a professor in the State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing (LIESMARS), Wuhan University, China. He works on remote sensing of night-time light and its applications in socioeconomic analysis such as humanitarian mapping. He thinks the value of remote sensing can be significantly promoted if it can directly help people and support global peace.',
+  'home.profile.biography': 'I am a remote sensing specialist working at the State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing (LIESMARS), Wuhan University, China. I am interested in remote sensing of night-time light and its applications in socioeconomic analysis such as humanitarian mapping. I think remote sensing can help to save lives and support peace.',
   'home.profile.research1': 'Remote sensing of night-time light',
   'home.profile.research2': 'Humanitarian mapping',
   'home.profile.research3': 'Land cover change mapping',

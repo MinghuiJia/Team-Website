@@ -1,7 +1,7 @@
 /*
  * @Author: jiaminghui
  * @Date: 2022-06-22 01:22:54
- * @LastEditTime: 2023-04-19 19:11:24
+ * @LastEditTime: 2023-04-20 00:45:48
  * @LastEditors: jiaminghui
  * @FilePath: \lixi\src\pages\EnglishProfile\index.js
  * @Description: 
@@ -240,7 +240,7 @@ export const Paper = () => {
               avatar={
                 <Avatar size={128} src={require("../../assets/LiXi_english2.png")}/>
               }
-              title={<span style={{fontSize: 20}}>Dr. Xi Li</span>}
+              title={<span style={{fontSize: 20}}>Prof. Xi Li</span>}
               description={
                 <p>
                   <FormattedMessage id="home.profile.biography"/>
