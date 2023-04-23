@@ -16,6 +16,7 @@ export default {
   'home.profile.research1': 'Remote sensing of night-time light',
   'home.profile.research2': 'Humanitarian mapping',
   'home.profile.research3': 'Land cover change mapping',
+  'home.profile.research.project1': 'Night-time light remote sensing for sustainable development goals',
   'home.profile.education.2000.9': '2000/9-2004/6, Photogrammetry and Remote Sensing, Wuhan University, Bachelor',
   'home.profile.education.2004.9': '2004/9-2009/6, Photogrammetry and Remote Sensing, Wuhan University, Ph.D',
   'home.profile.academic.service1': 'Editorial Board Member, International Journal of Remote Sensing',

@@ -1,7 +1,7 @@
 /*
  * @Author: jiaminghui
  * @Date: 2022-06-22 01:22:54
- * @LastEditTime: 2023-04-20 00:45:48
+ * @LastEditTime: 2023-04-23 22:01:38
  * @LastEditors: jiaminghui
  * @FilePath: \lixi\src\pages\EnglishProfile\index.js
  * @Description: 
@@ -290,6 +290,15 @@ export const Paper = () => {
       <Row style={{fontSize: 16}}>
         <li>
         <FormattedMessage id="home.profile.research3"/>
+        </li>
+      </Row>
+
+      <Row style={{marginTop: 20}}>
+        <Title level={4}>Research Project</Title>
+      </Row>
+      <Row style={{fontSize: 16}}>
+        <li>
+          Project lead, the Pilot Initiative &quot;<span style={{"fontStyle":"italic"}}>Night-time light remote sensing for sustainable development goals</span>&quot;, 2023-2025 Work Programme of Group on Earth Observations (GEO)
         </li>
       </Row>
 
