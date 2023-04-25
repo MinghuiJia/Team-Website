@@ -1,7 +1,7 @@
 /*
  * @Author: jiaminghui
  * @Date: 2022-05-09 10:45:16
- * @LastEditTime: 2023-04-14 13:45:54
+ * @LastEditTime: 2023-04-26 02:32:56
  * @LastEditors: jiaminghui
  * @FilePath: \lixi\src\pages\News\index.js
  * @Description: 
@@ -29,7 +29,7 @@ const News = props => {
         <center style={{fontSize:16, fontWeight:'bolder', color:"#000000"}}>夜光遥感评估土叙地震</center>
         <List.Item style={{display:"flex"}}>
           <Paragraph style={{flex:"2"}}>
-            2023年2月6日，为了响应联合国人道主义事务协调办公室（UNOCHA）应对土叙大地震的人道主义需求，联合国卫星中心（UNOSAT）激活了面向土叙地震的紧急制图服务。李熙教授团队受邀参加夜光遥感评估任务，利用夜光遥感技术从震区尺度和城市尺度，分别评估了土叙地震对城市电力的损害程度。该项成果已经在联合国卫星中心（UNOSAT）官方网站发布，并被<Link href="https://www.chinatimes.com/realtimenews/20230216004264-260409?chdtv=" target="_blank">中时新闻网</Link>报道。
+            2023年2月6日，土叙两国遭受地震重创。当日，联合国卫星中心（UNOSAT）激活了面向土叙地震的紧急制图服务。李熙团队受邀参加夜光遥感评估任务，利用夜光遥感技术从震区尺度和城市尺度，分别评估了土叙地震对城市电力的损害程度。该项成果已经在联合国卫星中心（UNOSAT）官方网站发布，并被<Link href="https://english.news.cn/20230213/f17599cd809f489292c76e8a73dfbdb2/c.html" target="_blank">新华社</Link>、<Link href="https://finance.sina.cn/2023-02-17/detail-imyfywyq8817547.d.html" target="_blank">光明日报</Link>、<Link href="https://www.chinatimes.com/realtimenews/20230216004264-260409?chdtv=" target="_blank">中时新闻网</Link>等报道，并被联合国人道事务协调办公室（<Link href="https://reliefweb.int/report/turkiye/turkiye-2023-earthquakes-situation-report-no-1-16-february-2023" target="_blank">UNOCHA</Link>）和联合国难民署（<Link href="https://data.unhcr.org/en/documents/details/98891" target="_blank">UNHCR</Link>）等机构采用。
           </Paragraph>
           <Card style={{flex:"1"}}
             cover={<img alt="新闻照片" src={require("../../assets/news/tuxu.jpg")} />}
