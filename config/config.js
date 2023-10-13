@@ -85,6 +85,12 @@ export default defineConfig({
               component: './EnglishProfile',
             },
             {
+              name: 'GazaStripEmergency',
+              icon: 'read',
+              path: '/gse',
+              component: './GazaStripEmergency',
+            },
+            {
               component: './404',
             },
           ],
@@ -107,10 +113,10 @@ export default defineConfig({
   title: false,
   ignoreMomentLocale: true,
   proxy: proxy[REACT_APP_ENV || 'dev'],
-  publicPath: "./",
+  publicPath: './',
   manifest: {
     basePath: '/',
-    publicPath: '/public/'
+    publicPath: '/public/',
   },
-  outputPath: "./website/dist"
+  outputPath: './website/dist',
 });

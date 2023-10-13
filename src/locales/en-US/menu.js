@@ -7,4 +7,5 @@ export default {
   'menu.news': 'News',
   'menu.project': 'Projects',
   'menu.popular-science': 'Popular Science',
+  'menu.GazaStripEmergency': 'Gaza Strip Emergency',
 };

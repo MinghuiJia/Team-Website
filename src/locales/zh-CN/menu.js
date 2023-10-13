@@ -4,7 +4,7 @@
  * @LastEditTime: 2022-06-23 23:13:02
  * @LastEditors: jiaminghui
  * @FilePath: \lixi\src\locales\zh-CN\menu.js
- * @Description: 
+ * @Description:
  */
 export default {
   'menu.home': '首页',
@@ -19,4 +19,5 @@ export default {
   'menu.research.honor': '学术奖励',
   'menu.popular-science': '夜光遥感科普',
   'menu.EnglishProfile': 'English',
+  'menu.GazaStripEmergency': 'Gaza Strip Emergency',
 };
