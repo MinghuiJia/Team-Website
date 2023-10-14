@@ -60,7 +60,7 @@ const GazaStripEmergency = (props) => {
             </div>
             <div key={5.12} style={{ display: 'inline-block', marginLeft: 5 }}>
               <img
-                src={require('../../assets/images/gaza_strip_light_peace.png')}
+                src={require('../../assets/images/gaza_strip_light_war.png')}
                 alt={'14 September 2023'}
               />
               <div style={{ margin: '0 auto', textAlign: 'center' }}>14 September 2023</div>
