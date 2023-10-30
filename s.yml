@@ -1,5 +1,5 @@
 edition: 1.0.0
-name: openai
+name: lixi
 access: default
 
 services:
@@ -18,7 +18,7 @@ services:
         name: ${env(serviceName)}
       function:
         name: ${env(functionName)}
-        description: OpenAI ChatGPT 代理函数
+        description: 网站主页
         runtime: custom.debian10
         environmentVariables:
           PATH: >-
@@ -39,14 +39,14 @@ services:
         codeUri: .
         # 临时硬盘大小为 512 MB
         diskSize: 512
-        caPort: 9000
+        caPort: 80
         layers:
           - acs:fc:${env(region)}:official:layers/Nodejs18/versions/1
         customRuntimeConfig:
           command:
             - npm
             - run
-            - start
+            - build
       triggers:
         - name: httpTrigger
           type: http
