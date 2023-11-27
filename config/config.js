@@ -84,12 +84,12 @@ export default defineConfig({
               path: '/en',
               component: './EnglishProfile',
             },
-            {
-              name: 'GazaStripEmergency',
-              icon: 'read',
-              path: '/gse',
-              component: './GazaStripEmergency',
-            },
+            // {
+            //   name: 'GazaStripEmergency',
+            //   icon: 'read',
+            //   path: '/gse',
+            //   component: './GazaStripEmergency',
+            // },
             {
               component: './404',
             },

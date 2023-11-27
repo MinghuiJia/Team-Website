@@ -16,14 +16,14 @@ const { Title, Text } = Typography;
 const { Meta } = Card;
 
 const students = [
-  {
-    name: "丁宇",
-    year: 2022,
-    degree: "博士",
-    img: "",
-    job: "",
-    blog_link: ""
-  },
+  // {
+  //   name: "丁宇",
+  //   year: 2022,
+  //   degree: "博士",
+  //   img: "",
+  //   job: "",
+  //   blog_link: ""
+  // },
   {
     name: "吴极",
     year: 2022,
@@ -109,7 +109,7 @@ const students = [
     year: 2021,
     degree: "硕士",
     img: "",
-    job: "",
+    job: "北京市公务员",
     blog_link: ""
   },
   // {
@@ -133,7 +133,7 @@ const students = [
     year: 2020,
     degree: "硕士",
     img: "",
-    job: "",
+    job: "湖北省气象局",
     blog_link: ""
   },
   {
