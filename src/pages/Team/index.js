@@ -366,6 +366,10 @@ const Team = props => {
       </Row> */}
       <Carousel autoplay dotPosition={"bottom"} style={{width:'600px'}}>
         <div>
+          <img style={contentStyle} src={require("../../assets/images/team_pic/teamParty_small.jpg")} />
+          {/* <img style={contentStyle} src={"https://cdn.jsdelivr.net/gh/MinghuiJia/LiXi_Blog_Img/team_pic/small_pic4.jpg"} /> */}
+        </div>
+        <div>
           <img style={contentStyle} src={require("../../assets/images/team_pic/small_pic4.jpg")} />
           {/* <img style={contentStyle} src={"https://cdn.jsdelivr.net/gh/MinghuiJia/LiXi_Blog_Img/team_pic/small_pic4.jpg"} /> */}
         </div>
