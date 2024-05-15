@@ -15,7 +15,6 @@ const { Title, Text } = Typography;
 const index = [
   {
     'author': ['Mengjie Wang', 'Xi Li'],
-    'isTop': true,
     'title': 'Estimating asset wealth using multidimensional luminous information in areas lacking nighttime light',
     'journal': 'International Journal of Digital Earth',
     'volume': '17',
@@ -30,7 +29,6 @@ const index = [
   },
   {
     'author': ['Zixuan Shao', 'Xi Li'],
-    'isTop': true,
     'title': 'Multi-scale estimation of poverty rate using night-time light imagery',
     'journal': 'International Journal of Applied Earth Observation and Geoinformation',
     'volume': '121',
@@ -45,7 +43,6 @@ const index = [
   },
   {
     'author': ['Minghui Jia', 'Xi Li', 'Yu Gong', 'Samir Belabbes', "Luca Dell'Oro"],
-    'isTop': true,
     'title': 'Estimating natural disaster loss using improved daily night-time light data',
     'journal': 'International Journal of Applied Earth Observation and Geoinformation',
     'volume': '120',
