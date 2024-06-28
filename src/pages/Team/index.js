@@ -53,7 +53,7 @@ const students = [
     year: 2022,
     degree: "硕士",
     img: "",
-    job: "",
+    job: "中国电建集团成都勘测设计研究院有限公司",
     blog_link: ""
   },
   {
@@ -85,7 +85,7 @@ const students = [
     year: 2021,
     degree: "硕士",
     img: "",
-    job: "",
+    job: "中国航天三江集团有限公司",
     blog_link: ""
   },
   {
@@ -93,7 +93,7 @@ const students = [
     year: 2021,
     degree: "硕士",
     img: "",
-    job: "",
+    job: "美团",
     blog_link: "http://minghuijia.cn/"
   },
   {
@@ -101,7 +101,7 @@ const students = [
     year: 2021,
     degree: "硕士",
     img: "",
-    job: "",
+    job: "中国银行",
     blog_link: "https://s-shao.github.io/"
   },
   {
